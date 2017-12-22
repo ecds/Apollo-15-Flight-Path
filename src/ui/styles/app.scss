@@ -1,9 +1,21 @@
 body {
-  margin: 0;
+  /* feel free to change height */
+  height: 5000px;
+  background: linear-gradient(
+    to bottom,
+    black,
+    darkblue
+  );
 }
 
-canvas {
-  background: black;
-  position: absolute;
-  width: 100%;
+svg {
+  position: fixed;
+}
+
+#flight-path-svg {
+  position: fixed;
+}
+
+#csm {
+  position: fixed;
 }

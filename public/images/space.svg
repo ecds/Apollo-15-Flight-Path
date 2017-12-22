@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg viewBox="0 0 1336 402" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id='flight-path'>
-        <path display='inline' stroke="#E91E63" stroke-width="3" d="M181.537787,30 C453.698184,30 955.210401,342 1155.87076,342 C1356.53112,342 1424.6636,30 1150.40277,30 C876.141949,30 391.487682,342 181.537787,342 C-28.4121071,342 -90.622609,30 181.537787,30 Z"></path>
+        <path display='inline' stroke="#E91E63" stroke-width="3" d="M181.537787,30 C453.698184,30 955.210401,342 1155.87076,342 C1356.53112,342 1424.6636,30 1150.40277,30 Z"></path>
     </g>
     <g id='stars'>
         <ellipse id="Oval" fill="#D8D8D8" cx="71" cy="75" rx="12" ry="10"></ellipse>
