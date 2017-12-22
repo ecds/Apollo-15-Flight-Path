@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "app.css",
+	"sourceRoot": "/Users/jsvarne/data/Apollo-15-Flight-Path/app/styles",
+	"sources": [
+		"../sass_compiler-input_base_path-ONrPZz41.tmp/src/ui/styles/app.scss"
+	],
+	"sourcesContent": [
+		"body {\n  /* feel free to change height */\n  height: 5000px;\n  background: linear-gradient(\n    to bottom,\n    black,\n    darkblue\n  );\n}\n\nsvg {\n  position: fixed;\n}\n\n#flight-path-svg {\n  position: fixed;\n}\n\n#csm {\n  position: fixed;\n}\n"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,IAAI,CAAC;EACH,gCAAgC;EAChC,MAAM,EAAE,MAAM;EACd,UAAU,EAAE,2CAIX,GACF;;AAED,AAAA,GAAG,CAAC;EACF,QAAQ,EAAE,KAAK,GAChB;;AAED,AAAA,gBAAgB,CAAC;EACf,QAAQ,EAAE,KAAK,GAChB;;AAED,AAAA,IAAI,CAAC;EACH,QAAQ,EAAE,KAAK,GAChB"
+}
