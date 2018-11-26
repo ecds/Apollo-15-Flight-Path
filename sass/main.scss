@@ -1,0 +1,227 @@
+// USWDS SASS variable overrides go here, before we import USWDS itself.
+
+$font-path: '../vendor/uswds/fonts';
+$image-path: '../vendor/uswds/img';
+
+// @import 'uswds';
+
+// New custom CSS rules can go here.
+html {
+  
+  font-size: 18px;
+}
+
+body {
+  
+}
+
+h2,
+h3 {
+  color: whitesmoke;
+}
+
+.uk-grid {
+  // position: absolute;
+  // height: 100vh;
+}
+
+.flight-path,
+object {
+  height: 90vh;
+}
+
+.flight-path {
+  position: fixed;
+  right: 15vw;
+  // transform: rotate(90deg);
+  // top: -55vh;
+  path {
+    fill: none;
+    // stroke: deeppink;
+    stroke-width: 3;
+  }
+}
+
+// @import compass
+
+
+// n is number of stars required
+@function multiple-box-shadow ($n) {
+  $value: '#{random(2000)}px #{random(2000)}px #FFF';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{random(4000)}px #{random(2000)}px #FFF'
+  }
+  @return unquote($value);
+}
+
+$shadows-small:  multiple-box-shadow(2000);
+$shadows-medium: multiple-box-shadow(1600);
+$shadows-big:    multiple-box-shadow(1400);
+
+.uk-grid {
+  // height: 100%;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  overflow: hidden;
+  
+  p, h1, section {
+    color: #dcdbdb;
+  }
+  
+ div {
+    overflow: auto;
+  }
+
+}
+
+.uk-article {
+  background: linear-gradient(90deg, #00000085 60%, transparent);
+  z-index: 10;
+
+  p {
+    font-size: 1.3em;
+    letter-spacing: .11em;
+    line-height: 1.6;
+    font-weight: 300;
+
+    &.uk-text-small {
+      font-size: unset;
+    }
+  }
+}
+
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.flight-path,
+.earth,
+.moon {
+  transition: transform 2s linear, top 2s linear;
+  transform-origin: center;
+}
+
+.flight-path {
+  transform: scale(1,1) translate(0,0);
+}
+
+.moon {
+  position: fixed;
+  right: 15vw;
+  // top: 83vh;
+  transform: scale(1, 1) translate(0,0);
+  z-index: 1;
+}
+
+.earth {
+  position: fixed;
+  right: 15vw;
+  transform: scale(1, 1) translate(0,0);
+  z-index: 1;
+}
+
+.earth {
+  &.on-moon {
+    // opacity: 0;
+  }
+}
+
+.flight-path {
+  z-index: 2;
+}
+
+.on-earth {
+  &.flight-path {
+    transform: scale(2.5, 2.5) translate(-6vh, 25vh);
+  }
+  &.earth {
+    transform: scale(2.5, 2.5) translate(-6vh, 25vh);
+  }
+  &.moon {
+    // top: 66vh;
+    transform: scale(2.5, 2.5) translate(-6vh, 25vh);
+  }
+}
+
+.on-moon {
+  &.flight-path {
+    transform: scale(4,4) translate(0, -38vh);
+  }
+  &.earth {
+    transform: scale(2,2) translate(0,-38vh);
+  }
+  &.moon {
+    // top: 66vh;
+    transform: scale(4,4) translate(0, -38vh);
+  }
+}
+
+#stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $shadows-small;
+  animation: animStar 50s linear infinite;
+
+    
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+  }
+}
+
+.background {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  width: 100vw;
+  // overflow: hidden;
+}
+    
+#stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: $shadows-medium;
+  animation: animStar 100s linear infinite;
+    
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+  }
+}
+
+#stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: $shadows-big;
+  animation			: animStar 150s linear infinite;
+    
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $shadows-big;
+  }
+}
+
+    
+@keyframes animStar {
+  from {
+    transform: translateY(-2000px);
+  }
+  to {
+    transform: translateY(0);
+    }
+}
