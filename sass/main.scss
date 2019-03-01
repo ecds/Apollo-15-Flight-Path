@@ -6,13 +6,10 @@ $image-path: '../vendor/uswds/img';
 // @import 'uswds';
 
 // New custom CSS rules can go here.
-html {
-  
-  font-size: 18px;
-}
-
+html,
 body {
   
+  font-size: 18px;
 }
 
 h2,
@@ -20,9 +17,20 @@ h3 {
   color: whitesmoke;
 }
 
-.uk-grid {
-  // position: absolute;
-  // height: 100vh;
+blockquote {
+  color: white;
+}
+
+time {
+  color: lightslategray;
+  font-size: 1.2rem;
+}
+
+q {
+  font-family: Georgia,Times,'Times New Roman',serif;
+  font-size: 24px;
+  letter-spacing: .15rem;
+  line-height: 1.5;
 }
 
 .flight-path,
@@ -64,6 +72,7 @@ $shadows-big:    multiple-box-shadow(1400);
   overflow: hidden;
   
   p, h1, section {
+    background: transparent;
     color: #dcdbdb;
   }
   
@@ -74,14 +83,23 @@ $shadows-big:    multiple-box-shadow(1400);
 }
 
 .uk-article {
-  background: linear-gradient(90deg, #00000085 60%, transparent);
+  background: rgba(0,0,0,0.3);
   z-index: 10;
 
   p {
-    font-size: 1.3em;
-    letter-spacing: .11em;
-    line-height: 1.6;
     font-weight: 300;
+  }
+
+  p,
+  h4 {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  }
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: .11rem;
+    line-height: 1.6;
 
     &.uk-text-small {
       font-size: unset;
@@ -94,7 +112,7 @@ $shadows-big:    multiple-box-shadow(1400);
 .flight-path,
 .earth,
 .moon {
-  transition: transform 2s linear, top 2s linear;
+  transition: transform 1s linear, top 1s linear;
   transform-origin: center;
 }
 
@@ -123,33 +141,49 @@ $shadows-big:    multiple-box-shadow(1400);
   }
 }
 
+.surface {
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  // transform: scale(0,0);
+  width: 100%;
+  z-index: 2;
+  transition: opacity 1s linear, top 1s linear
+}
+
+.surface-show {
+  opacity: 1;
+}
+
 .flight-path {
   z-index: 2;
 }
 
 .on-earth {
   &.flight-path {
-    transform: scale(2.5, 2.5) translate(-6vh, 25vh);
+    transform: scale(2.5, 2.5) translate(-3vw, 25vh);
   }
   &.earth {
-    transform: scale(2.5, 2.5) translate(-6vh, 25vh);
+    transform: scale(2.5, 2.5) translate(-3vw, 25vh);
   }
   &.moon {
     // top: 66vh;
-    transform: scale(2.5, 2.5) translate(-6vh, 25vh);
+    transform: scale(2.5, 2.5) translate(-3vw, 25vh);
   }
 }
 
 .on-moon {
   &.flight-path {
-    transform: scale(4,4) translate(0, -38vh);
+    transform: scale(10,10) translate(0, -35vh);
   }
   &.earth {
-    transform: scale(2,2) translate(0,-38vh);
+    transform: scale(10,10) translate(0,-35vh);
   }
   &.moon {
     // top: 66vh;
-    transform: scale(4,4) translate(0, -38vh);
+    transform: scale(10,10) translate(0, -35vh);
   }
 }
 
