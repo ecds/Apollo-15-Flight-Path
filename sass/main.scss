@@ -8,7 +8,7 @@ $image-path: '../vendor/uswds/img';
 // New custom CSS rules can go here.
 html,
 body {
-  
+  font-family: 'Work Sans', sans-serif;
   font-size: 18px;
 }
 
@@ -27,7 +27,7 @@ time {
 }
 
 q {
-  font-family: Georgia,Times,'Times New Roman',serif;
+  // font-family: Georgia,Times,'Times New Roman',serif;
   font-size: 24px;
   letter-spacing: .15rem;
   line-height: 1.5;
@@ -83,7 +83,7 @@ $shadows-big:    multiple-box-shadow(1400);
 }
 
 .uk-article {
-  background: rgba(0,0,0,0.3);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
   z-index: 10;
 
   p {
