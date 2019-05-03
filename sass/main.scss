@@ -6,10 +6,13 @@ $image-path: '../vendor/uswds/img';
 // @import 'uswds';
 
 // New custom CSS rules can go here.
-html,
-body {
-  font-family: 'Work Sans', sans-serif;
+html {
+  
   font-size: 18px;
+}
+
+body {
+  
 }
 
 h2,
@@ -17,36 +20,47 @@ h3 {
   color: whitesmoke;
 }
 
-blockquote {
-  color: white;
+.uk-grid {
+  // position: absolute;
+  // height: 100vh;
 }
 
-time {
-  color: lightslategray;
-  font-size: 1.2rem;
+
+.svg-collection {  
+  svg,
+  object {
+    height: 90vh;
+  }
+
+  svg {
+    position: fixed;
+    right: 15vw;
+    // transform: rotate(90deg);
+    // top: -55vh;
+    path {
+      fill: none;
+      // stroke: deeppink;
+      opacity: 0;
+      stroke-width: 3;
+    }
+  }
 }
 
-q {
-  // font-family: Georgia,Times,'Times New Roman',serif;
-  font-size: 24px;
-  letter-spacing: .15rem;
-  line-height: 1.5;
+iframe.uk-width-1-1 {
+  height: 33vh;
 }
 
-.flight-path,
-object {
-  height: 90vh;
+article {
+  z-index: 3;
+
+  img {
+    z-index: 1;
+  }
 }
 
-.flight-path {
-  position: fixed;
-  right: 15vw;
-  // transform: rotate(90deg);
-  // top: -55vh;
-  path {
-    fill: none;
-    // stroke: deeppink;
-    stroke-width: 3;
+figcaption {
+  a {
+    text-decoration: underline;
   }
 }
 
@@ -71,9 +85,8 @@ $shadows-big:    multiple-box-shadow(1400);
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   overflow: hidden;
   
-  p, h1, section {
-    background: transparent;
-    color: #dcdbdb;
+  p, h1 {
+    color: white;
   }
   
  div {
@@ -82,37 +95,10 @@ $shadows-big:    multiple-box-shadow(1400);
 
 }
 
-.uk-article {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
-  z-index: 10;
-
-  p {
-    font-weight: 300;
-  }
-
-  p,
-  h4 {
-    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-  }
-
-  p {
-    font-size: 1.2rem;
-    font-weight: 300;
-    letter-spacing: .11rem;
-    line-height: 1.6;
-
-    &.uk-text-small {
-      font-size: unset;
-    }
-  }
-}
-
-.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-
 .flight-path,
 .earth,
 .moon {
-  transition: transform 1s linear, top 1s linear;
+  transition: transform 2s linear, top 2s linear;
   transform-origin: center;
 }
 
@@ -126,19 +112,6 @@ $shadows-big:    multiple-box-shadow(1400);
   // top: 83vh;
   transform: scale(1, 1) translate(0,0);
   z-index: 1;
-}
-
-.earth {
-  position: fixed;
-  right: 15vw;
-  transform: scale(1, 1) translate(0,0);
-  z-index: 1;
-}
-
-.earth {
-  &.on-moon {
-    // opacity: 0;
-  }
 }
 
 .surface {
@@ -157,33 +130,46 @@ $shadows-big:    multiple-box-shadow(1400);
   opacity: 1;
 }
 
+.earth {
+  position: fixed;
+  right: 15vw;
+  transform: scale(1, 1) translate(0,0);
+  z-index: 1;
+}
+
+.earth {
+  &.on-moon {
+    // opacity: 0;
+  }
+}
+
 .flight-path {
   z-index: 2;
 }
 
 .on-earth {
   &.flight-path {
-    transform: scale(2.5, 2.5) translate(-3vw, 25vh);
+    transform: scale(2.5, 2.5) translate(-6vh, 25vh);
   }
   &.earth {
-    transform: scale(2.5, 2.5) translate(-3vw, 25vh);
+    transform: scale(2.5, 2.5) translate(-6vh, 25vh);
   }
   &.moon {
     // top: 66vh;
-    transform: scale(2.5, 2.5) translate(-3vw, 25vh);
+    transform: scale(2.5, 2.5) translate(-6vh, 25vh);
   }
 }
 
 .on-moon {
   &.flight-path {
-    transform: scale(10,10) translate(0, -35vh);
+    transform: scale(4,4) translate(0, -38vh);
   }
   &.earth {
-    transform: scale(10,10) translate(0,-35vh);
+    transform: scale(2,2) translate(0,-38vh);
   }
   &.moon {
     // top: 66vh;
-    transform: scale(10,10) translate(0, -35vh);
+    transform: scale(4,4) translate(0, -38vh);
   }
 }
 
