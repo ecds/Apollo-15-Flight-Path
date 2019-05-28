@@ -7,13 +7,40 @@ $image-path: '../vendor/uswds/img';
 
 // New custom CSS rules can go here.
 html {
-  
-  font-size: 18px;
+  font-size: 1.25rem;
 }
 
-body {
-  
+section {
+  margin: 4rem 0;
 }
+
+h2 {
+  font-weight: bold !important;
+}
+
+.margin-v2 {
+  margin: 2rem 0;
+}
+
+.object-title {
+  font-weight: bold;
+  color: white;
+}
+
+.object-action {
+  // font-weight: bold;
+  color: white;
+  opacity: 0.75;
+  transition: opacity .2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+    color: white;
+    transition: opacity .2s ease-in-out;
+    text-decoration: none;
+  }
+}
+
 
 h2,
 h3 {
@@ -77,7 +104,7 @@ $shadows-medium: multiple-box-shadow(1600);
 $shadows-big:    multiple-box-shadow(1400);
 
 .uk-first-column {
-  background: rgba(255,255,255,0.1);
+  background: rgba(0,0,0,0.75);
 }
 
 .uk-grid {
