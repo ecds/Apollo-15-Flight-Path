@@ -1,6 +1,15 @@
 html {
   font-size: 18px; }
 
+
+/* customized section; will migrate to sass */
+
+.uk-first-column {
+  background: rgba(255,255,255,0.1);
+}
+
+/* end */
+
 h2,
 h3 {
   color: whitesmoke; }
@@ -24,9 +33,6 @@ article {
   z-index: 3; }
   article img {
     z-index: 1; }
-
-figcaption a {
-  text-decoration: underline; }
 
 .embed-container {
   position: relative;
