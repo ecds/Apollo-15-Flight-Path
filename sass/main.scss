@@ -1,7 +1,7 @@
 // USWDS SASS variable overrides go here, before we import USWDS itself.
 
-$font-path: '../vendor/uswds/fonts';
-$image-path: '../vendor/uswds/img';
+$font-path: "../vendor/uswds/fonts";
+$image-path: "../vendor/uswds/img";
 
 // @import 'uswds';
 
@@ -27,20 +27,27 @@ h2 {
   color: white;
 }
 
-.object-action {
-  // font-weight: bold;
+.anchor {
   color: white;
-  opacity: 0.75;
-  transition: opacity .2s ease-in-out;
-
   &:hover {
-    opacity: 1;
     color: white;
-    transition: opacity .2s ease-in-out;
     text-decoration: none;
   }
 }
 
+.object-action {
+  // font-weight: bold;
+  color: white;
+  opacity: 0.75;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+    color: white;
+    transition: opacity 0.2s ease-in-out;
+    text-decoration: none;
+  }
+}
 
 h2,
 h3 {
@@ -52,8 +59,7 @@ h3 {
   // height: 100vh;
 }
 
-
-.svg-collection {  
+.svg-collection {
   svg,
   object {
     height: 90vh;
@@ -85,41 +91,54 @@ article {
   }
 }
 
-
-.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 // @import compass
 
-
 // n is number of stars required
-@function multiple-box-shadow ($n) {
-  $value: '#{random(2000)}px #{random(2000)}px #FFF';
+@function multiple-box-shadow($n) {
+  $value: "#{random(2000)}px #{random(2000)}px #FFF";
   @for $i from 2 through $n {
-    $value: '#{$value} , #{random(4000)}px #{random(2000)}px #FFF'
+    $value: "#{$value} , #{random(4000)}px #{random(2000)}px #FFF";
   }
   @return unquote($value);
 }
 
-$shadows-small:  multiple-box-shadow(2000);
+$shadows-small: multiple-box-shadow(2000);
 $shadows-medium: multiple-box-shadow(1600);
-$shadows-big:    multiple-box-shadow(1400);
+$shadows-big: multiple-box-shadow(1400);
 
 .uk-first-column {
-  background: rgba(0,0,0,0.75);
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .uk-grid {
   // height: 100%;
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
-  
-  p, h1 {
+
+  p,
+  h1 {
     color: white;
   }
-  
- div {
+
+  div {
     overflow: auto;
   }
-
 }
 
 .flight-path,
@@ -130,14 +149,14 @@ $shadows-big:    multiple-box-shadow(1400);
 }
 
 .flight-path {
-  transform: scale(1,1) translate(0,0);
+  transform: scale(1, 1) translate(0, 0);
 }
 
 .moon {
   position: fixed;
   right: 15vw;
   // top: 83vh;
-  transform: scale(1, 1) translate(0,0);
+  transform: scale(1, 1) translate(0, 0);
   z-index: 1;
 }
 
@@ -150,7 +169,7 @@ $shadows-big:    multiple-box-shadow(1400);
   // transform: scale(0,0);
   width: 100%;
   z-index: 2;
-  transition: opacity 1s linear, top 1s linear
+  transition: opacity 1s linear, top 1s linear;
 }
 
 .surface-show {
@@ -160,7 +179,7 @@ $shadows-big:    multiple-box-shadow(1400);
 .earth {
   position: fixed;
   right: 15vw;
-  transform: scale(1, 1) translate(0,0);
+  transform: scale(1, 1) translate(0, 0);
   z-index: 1;
 }
 
@@ -189,14 +208,14 @@ $shadows-big:    multiple-box-shadow(1400);
 
 .on-moon {
   &.flight-path {
-    transform: scale(4,4) translate(0, -38vh);
+    transform: scale(4, 4) translate(0, -38vh);
   }
   &.earth {
-    transform: scale(2,2) translate(0,-38vh);
+    transform: scale(2, 2) translate(0, -38vh);
   }
   &.moon {
     // top: 66vh;
-    transform: scale(4,4) translate(0, -38vh);
+    transform: scale(4, 4) translate(0, -38vh);
   }
 }
 
@@ -207,7 +226,6 @@ $shadows-big:    multiple-box-shadow(1400);
   box-shadow: $shadows-small;
   animation: animStar 50s linear infinite;
 
-    
   &:after {
     content: " ";
     position: absolute;
@@ -226,14 +244,14 @@ $shadows-big:    multiple-box-shadow(1400);
   width: 100vw;
   // overflow: hidden;
 }
-    
+
 #stars2 {
   width: 2px;
   height: 2px;
   background: transparent;
   box-shadow: $shadows-medium;
   animation: animStar 100s linear infinite;
-    
+
   &:after {
     content: " ";
     position: absolute;
@@ -250,8 +268,8 @@ $shadows-big:    multiple-box-shadow(1400);
   height: 3px;
   background: transparent;
   box-shadow: $shadows-big;
-  animation			: animStar 150s linear infinite;
-    
+  animation: animStar 150s linear infinite;
+
   &:after {
     content: " ";
     position: absolute;
@@ -263,12 +281,11 @@ $shadows-big:    multiple-box-shadow(1400);
   }
 }
 
-    
 @keyframes animStar {
   from {
     transform: translateY(-2000px);
   }
   to {
     transform: translateY(0);
-    }
+  }
 }
