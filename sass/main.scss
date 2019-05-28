@@ -289,3 +289,12 @@ $shadows-big: multiple-box-shadow(1400);
     transform: translateY(0);
   }
 }
+
+/* UI Kit Sticky */
+.uk-active{
+    background: rgba(0,0,0,0.95);
+}
+
+#navbar {
+  z-index: 9999 !important;
+}

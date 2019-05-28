@@ -135,3 +135,9 @@ $.each($descentLegs, function(index, segment) {
 AOS.init({
   once: false // whether animation should happen only once - while scrolling down
 });
+
+// UI Kit - UI Sticky Control
+var sticky = UIkit.sticky("#navbar", {
+  clsactive: "",
+  clsinactive: ".uk-invisible"
+});
