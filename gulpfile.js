@@ -13,10 +13,13 @@ const PORT = process.env.PORT || '8000';
 // e.g. 'assets', or 'public/assets'.
 const ASSETS_DIR = path.join(__dirname, '.');
 
+sass.compiler = require('node-sass');
+
 gulp.task('sass', () => {
   return gulp.src(`${ASSETS_DIR}/sass/**/*.scss`)
     .pipe(sourcemaps.init())
     .pipe(sourcemaps.write())
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(`${ASSETS_DIR}/css`));
 });
 
