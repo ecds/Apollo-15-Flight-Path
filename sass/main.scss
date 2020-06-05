@@ -127,9 +127,9 @@ $shadows-small: multiple-box-shadow(2000);
 $shadows-medium: multiple-box-shadow(1600);
 $shadows-big: multiple-box-shadow(1400);
 
-.uk-first-column {
-  background: rgba(0, 0, 0, 0.75);
-}
+// .uk-first-column {
+//   background: rgba(0, 0, 0, 0.75);
+// }
 
 .uk-grid {
   // height: 100%;
@@ -314,4 +314,54 @@ $shadows-big: multiple-box-shadow(1400);
 
 #navbar {
   z-index: 9999 !important;
+}
+
+
+
+
+.ap-site-msg-container {
+  margin: auto;
+  text-align: center;
+  margin: 1rem 15rem;
+  padding: 2rem;
+  background: rgba(96, 96, 96, 0.8);
+  color: white;
+}
+
+.ap-site-msg-heading {
+  font-size: 2.5rem;
+}
+
+.ap-site-scroll-container {
+  text-align: center;
+  color: white;
+  background: black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+} 
+
+*, .uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
+  font-family: "Letter Gothic Std";
+}
+
+.ap-site-logo-container {
+  margin: auto;
+}
+
+.a15-card {
+  border-radius: 10px 10px 0 0;
+}
+
+.ap-site-logo-container > .uk-grid {
+  background: none;
+}
+
+.a15-overlay {
+  background: rgba(0,0,0, 0.8);
+}
+
+.a15-landing-section {
+  background: black;
 }
