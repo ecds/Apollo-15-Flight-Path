@@ -149,18 +149,29 @@ $shadows-big: multiple-box-shadow(1400);
 .flight-path,
 .earth,
 .moon {
-  transition: transform 2s linear, top 2s linear;
+  // display: none;
+  opacity: 0;
+  transition: transform 2s linear, top 2s linear, opacity .5s linear;
   transform-origin: center;
 }
 
+.flight-path,
+.earth,
+.moon {
+  &.show {
+    opacity: 1;
+  }
+}
+
 .flight-path {
+  top: 0;
   transform: scale(1, 1) translate(0, 0);
 }
 
 .moon {
+  bottom: 10vh;
   position: fixed;
   right: 15vw;
-  // top: 83vh;
   transform: scale(1, 1) translate(0, 0);
   z-index: 1;
 }
@@ -184,6 +195,7 @@ $shadows-big: multiple-box-shadow(1400);
 .earth {
   position: fixed;
   right: 15vw;
+  top: 0;
   transform: scale(1, 1) translate(0, 0);
   z-index: 1;
 }
@@ -203,7 +215,7 @@ $shadows-big: multiple-box-shadow(1400);
     transform: scale(2.5, 2.5) translate(-6vh, 25vh);
   }
   &.earth {
-    transform: scale(2.5, 2.5) translate(-6vh, 25vh);
+    transform: scale(2.5, 2.5) translate(1vw, 25vh);
   }
   &.moon {
     // top: 66vh;
@@ -340,7 +352,7 @@ $shadows-big: multiple-box-shadow(1400);
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
-} 
+}
 
 *, .uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
   font-family: "Letter Gothic Std";
@@ -362,6 +374,13 @@ $shadows-big: multiple-box-shadow(1400);
   background: rgba(0,0,0, 0.8);
 }
 
-.a15-landing-section {
-  background: black;
+// .a15-landing-section {
+//   background: black;
+// }
+
+.ap-intro {
+  // background: #000;
+  background: radial-gradient(ellipse at bottom, #090a0f 100%, #1b2735 0%);
+  height: 100vh;
+  width: 100vw;
 }

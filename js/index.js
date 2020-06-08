@@ -4,8 +4,7 @@ function pathPrepare($el) {
   $el.css("stroke-dashoffset", lineLength);
 }
 
-var $ascentLegs = [
-  {
+var $ascentLegs = [{
     path: $("path#leg-1"),
     trigger: $("section#trigger1")
   },
@@ -15,8 +14,7 @@ var $ascentLegs = [
   }
 ];
 
-var $descentLegs = [
-  {
+var $descentLegs = [{
     path: $("path#leg-3"),
     trigger: $("section#trigger3")
   },
@@ -30,20 +28,19 @@ var controller = new ScrollMagic.Controller();
 
 // fadeAscent
 var fadeAscent = new ScrollMagic.Scene({
-  triggerElement: "#trigger-on-the-moon",
-  duration: 200
-})
-  .on("enter", function(event) {
-    console.log(event);
+    triggerElement: "#trigger-on-the-moon",
+    duration: 200
+  })
+  .on("enter", function (event) {
     if (event.scrollDirection === "FORWARD") {
-      $.each($ascentLegs, function(index, segment) {
+      $.each($ascentLegs, function (index, segment) {
         segment.path.fadeTo("slow", 0.3);
       });
     }
   })
-  .on("leave", function(event) {
+  .on("leave", function (event) {
     if (event.scrollDirection === "REVERSE") {
-      $.each($ascentLegs, function(index, segment) {
+      $.each($ascentLegs, function (index, segment) {
         segment.path.fadeTo("slow", 1);
       });
     }
@@ -53,31 +50,39 @@ var fadeAscent = new ScrollMagic.Scene({
 // end fadeAcent
 
 var onEarth = new ScrollMagic.Scene({
-  triggerElement: "#trigger-on-earth",
-  duration: $("#trigger-on-earth").innerHeight()
-})
-  .on("enter", function(event) {
+    triggerElement: "#trigger-on-earth",
+    duration: $("#trigger-on-earth").innerHeight()
+  })
+  .on("enter", function (event) {
     $(".flight-path").addClass("on-earth");
     $(".moon").addClass("on-earth");
     $(".earth").addClass("on-earth");
+    $(".earth").addClass("show");
+    $(".moon").addClass("show");
+    $(".flight-path").addClass("show");
   })
-  .on("leave", function(event) {
+  .on("leave", function (event) {
     $(".flight-path").removeClass("on-earth");
     $(".moon").removeClass("on-earth");
     $(".earth").removeClass("on-earth");
+    if (event.scrollDirection === "REVERSE") {
+      $(".earth").removeClass("show");
+      $(".moon").removeClass("show");
+      $(".flight-path").removeClass("show");
+    }
   })
   .addTo(controller);
 
 var landOnMoon = new ScrollMagic.Scene({
-  triggerElement: "#trigger-on-the-moon",
-  duration: $("#trigger-on-the-moon").innerHeight()
-})
-  .on("enter", function(event) {
+    triggerElement: "#trigger-on-the-moon",
+    duration: $("#trigger-on-the-moon").innerHeight()
+  })
+  .on("enter", function (event) {
     $(".flight-path").addClass("on-moon");
     $(".moon").addClass("on-moon");
     $(".earth").addClass("on-moon");
   })
-  .on("leave", function(event) {
+  .on("leave", function (event) {
     $(".flight-path").removeClass("on-moon");
     $(".moon").removeClass("on-moon");
     $(".earth").removeClass("on-moon");
@@ -85,13 +90,13 @@ var landOnMoon = new ScrollMagic.Scene({
   .addTo(controller);
 
 var showSurface = new ScrollMagic.Scene({
-  triggerElement: "#trigger-show-surface",
-  duration: $("#trigger-show-surface").innerHeight()
-})
-  .on("enter", function(event) {
+    triggerElement: "#trigger-show-surface",
+    duration: $("#trigger-show-surface").innerHeight()
+  })
+  .on("enter", function (event) {
     $(".surface").addClass("surface-show");
   })
-  .on("leave", function(event) {
+  .on("leave", function (event) {
     $(".surface").removeClass("surface-show");
   })
   .addTo(controller);
@@ -116,18 +121,18 @@ function createLeg(segment, tween) {
       duration: segment.trigger.innerHeight(),
       tweenChanges: false // seems to match speed with scroll speed
     })
-      .setTween(tween)
-      // .addIndicators() // add indicators (requires plugin)
-      .addTo(controller)
+    .setTween(tween)
+    // .addIndicators() // add indicators (requires plugin)
+    .addTo(controller)
   );
 }
 
-$.each($ascentLegs, function(index, segment) {
+$.each($ascentLegs, function (index, segment) {
   var tween = createTween(segment);
   createLeg(segment, tween);
 });
 
-$.each($descentLegs, function(index, segment) {
+$.each($descentLegs, function (index, segment) {
   var tween = createTween(segment);
   createLeg(segment, tween);
 });

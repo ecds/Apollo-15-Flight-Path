@@ -1,6 +1,6 @@
 ## Requirements
 
-You'll need [Node.js][] version 6. That's it!
+You'll need [Node.js][] version 6 or above. That's it!
 
 ## Quick start
 
@@ -23,7 +23,7 @@ see the changes.
 
 ## Building the site
 
-Run `npm run build` to generate the site's CSS.
+Run `npm run-script build` to generate the site's CSS.
 
 ## Deploying the site
 
