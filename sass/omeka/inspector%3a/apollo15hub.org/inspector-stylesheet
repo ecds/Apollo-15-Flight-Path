@@ -1,0 +1,21 @@
+button#submit_search {}
+#wrap {
+  background: black !important;
+  color: #cccccc !important;
+}
+
+
+#wrap > header {
+  background: black !important;
+}
+
+#site-title > a {
+  color: white !important;
+}
+
+html, a, h1, h2, h3, h4, h5 {
+  font-family: "Letter Gothic Std" !important;
+}
+
+
+header {}
