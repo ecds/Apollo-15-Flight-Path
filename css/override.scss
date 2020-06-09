@@ -16,6 +16,11 @@ $ap15-color-dark-2: #737373;
 
 #site-title > a {
   color: white !important;
+  text-decoration: none;
+}
+
+.item-meta a {
+  text-decoration: none;
 }
 
 html, a, h1, h2, h3, h4, h5 {
@@ -26,11 +31,15 @@ header {
   border: none !important;
 }
 
+header > a {
+  text-decoration: none;
+}
+
 a {
   color: white !important;
   opacity: 0.9 !important;
   font-weight: bold !important;
-  /* text-decoration: underline; */
+  text-decoration: underline dotted;
 }
 
 a:hover {
