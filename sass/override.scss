@@ -1,4 +1,9 @@
 
+$ap15-color-light-1: #eeeeee;
+$ap15-color-light-2: #cccccc;
+$ap15-color-dark-1: #333333;
+$ap15-color-dark-2: #737373;
+
 #wrap {
   background: black !important;
   color: #cccccc !important;
@@ -35,10 +40,13 @@ a:hover {
 
 h1, h2, h3, h4, h5 {
   font-weight: normal !important;
+  color: white;
 }
 
-ul a, .mm-title {
-  color: #333333 !important;
+.mm-listview {
+  a {
+    color: $ap15-color-dark-1;
+  }
 }
 
 #search-form {
@@ -56,4 +64,12 @@ ul a, .mm-title {
 
 html {
     background: black;
+}
+
+ul.item-pagination.navigation a, ul a {
+  color: $ap15-color-light-2 !important;
+}
+
+.mm-offcanvas {
+  background: $ap15-color-dark-2;
 }
