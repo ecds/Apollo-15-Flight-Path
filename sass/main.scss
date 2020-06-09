@@ -5,6 +5,8 @@ $image-path: "../vendor/uswds/img";
 
 // @import 'uswds';
 
+$ap-color-light-1: #dddddd;
+
 // New custom CSS rules can go here.
 html {
   font-size: 1.25rem;
@@ -349,4 +351,28 @@ $shadows-big: multiple-box-shadow(1400);
 
 .ap-intro {
   background: radial-gradient(ellipse at bottom, #090a0f 100%, #1b2735 0%);
+}
+
+.ap-z-index {
+  z-index: 999999;
+}
+
+.ap-menu-item {
+  color: $ap-color-light-1 !important;
+  
+
+  &:hover {
+    color: white !important;
+    transition: opacity 0.2s ease-in-out;
+  }
+}
+
+.ap-home-card {
+  filter: grayscale(50%);
+  filter: brightness(50%);
+  &:hover {
+    filter: grayscale(0);
+    filter: brightness(100%);
+    transition: all 0.2s ease;
+  }
 }
