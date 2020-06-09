@@ -10,12 +10,21 @@ html {
   font-size: 1.25rem;
 }
 
+*, .uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
+  font-family: "Letter Gothic Std";
+}
+
 section {
   margin: 4rem 0;
 }
 
 h2 {
   font-weight: bold !important;
+}
+
+h2,
+h3 {
+  color: white;
 }
 
 .margin-v2 {
@@ -29,19 +38,14 @@ h2 {
 
 .anchor {
   color: white;
-  // opacity: 0.6;
-  // transition: opacity 0.2s ease-in-out;
 
   &:hover {
     color: white;
-    // opacity: 1;
     text-decoration: none;
-    // transition: opacity 0.2s ease-in-out;
   }
 }
 
 .object-action {
-  // font-weight: bold;
   color: white;
   opacity: 0.75;
   transition: opacity 0.2s ease-in-out;
@@ -52,16 +56,6 @@ h2 {
     transition: opacity 0.2s ease-in-out;
     text-decoration: none;
   }
-}
-
-h2,
-h3 {
-  color: whitesmoke;
-}
-
-.uk-grid {
-  // position: absolute;
-  // height: 100vh;
 }
 
 .svg-collection {
@@ -127,12 +121,7 @@ $shadows-small: multiple-box-shadow(2000);
 $shadows-medium: multiple-box-shadow(1600);
 $shadows-big: multiple-box-shadow(1400);
 
-// .uk-first-column {
-//   background: rgba(0, 0, 0, 0.75);
-// }
-
 .uk-grid {
-  // height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
 
@@ -149,7 +138,6 @@ $shadows-big: multiple-box-shadow(1400);
 .flight-path,
 .earth,
 .moon {
-  // display: none;
   opacity: 0;
   transition: transform 2s linear, top 2s linear, opacity .5s linear;
   transform-origin: center;
@@ -182,7 +170,6 @@ $shadows-big: multiple-box-shadow(1400);
   position: fixed;
   right: 0;
   top: 0;
-  // transform: scale(0,0);
   width: 100%;
   z-index: 2;
   transition: opacity 1s linear, top 1s linear;
@@ -200,12 +187,6 @@ $shadows-big: multiple-box-shadow(1400);
   z-index: 1;
 }
 
-.earth {
-  &.on-moon {
-    // opacity: 0;
-  }
-}
-
 .flight-path {
   z-index: 2;
 }
@@ -218,7 +199,6 @@ $shadows-big: multiple-box-shadow(1400);
     transform: scale(2.5, 2.5) translate(1vw, 25vh);
   }
   &.moon {
-    // top: 66vh;
     transform: scale(2.5, 2.5) translate(-6vh, 25vh);
   }
 }
@@ -259,7 +239,6 @@ $shadows-big: multiple-box-shadow(1400);
   height: 100vh;
   top: 0;
   width: 100vw;
-  // overflow: hidden;
 }
 
 #stars2 {
@@ -328,9 +307,6 @@ $shadows-big: multiple-box-shadow(1400);
   z-index: 9999 !important;
 }
 
-
-
-
 .ap-site-msg-container {
   margin: auto;
   text-align: center;
@@ -354,9 +330,6 @@ $shadows-big: multiple-box-shadow(1400);
   width: fit-content;
 }
 
-*, .uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
-  font-family: "Letter Gothic Std";
-}
 
 .ap-site-logo-container {
   margin: auto;
@@ -374,13 +347,6 @@ $shadows-big: multiple-box-shadow(1400);
   background: rgba(0,0,0, 0.8);
 }
 
-// .a15-landing-section {
-//   background: black;
-// }
-
 .ap-intro {
-  // background: #000;
   background: radial-gradient(ellipse at bottom, #090a0f 100%, #1b2735 0%);
-  height: 100vh;
-  width: 100vw;
 }
