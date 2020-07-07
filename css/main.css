@@ -2,7 +2,7 @@ html {
   font-size: 1.25rem; }
 
 *, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
-  font-family: "Letter Gothic Std"; }
+  font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
 
 section {
   margin: 4rem 0; }
