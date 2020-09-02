@@ -219,6 +219,8 @@ article {
 #navbar {
   z-index: 9999 !important; }
 
+
+
 .ap-site-msg-container {
   margin: auto;
   text-align: center;
@@ -228,7 +230,15 @@ article {
   color: white; }
 
 .ap-site-msg-heading {
-  font-size: 2.5rem; }
+  font-size: 2.5rem; 
+  padding-bottom: 1rem;
+  font-weight: 700;
+}
+
+.ap-responsive-menu {
+  padding: 25px 0;
+  height: 30px;
+}
 
 .ap-site-scroll-container {
   text-align: center;
@@ -255,7 +265,7 @@ article {
   background: radial-gradient(ellipse at bottom, #090a0f 100%, #1b2735 0%); }
 
 .ap-z-index {
-  z-index: 999999; }
+  z-index: 10; }
 
 .ap-menu-item {
   color: #dddddd !important; }
@@ -270,3 +280,29 @@ article {
     filter: grayscale(0);
     filter: brightness(100%);
     transition: all 0.2s ease; }
+
+.ap-button {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 959px) {
+  .ap-site-msg-container {
+    margin: 1rem 1rem;
+  }
+
+  .ap-site-msg-heading {
+    font-size: 1.25rem; 
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+}
+
+
+@media only screen and (max-width: 1199px) {
+
+  .ap-site-msg-heading {
+    font-size: 1.25rem; 
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+}

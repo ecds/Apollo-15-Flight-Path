@@ -20,11 +20,26 @@
     <section class="uk-child-width-1-1 uk-margin-remove uk-text-center ap-intro" uk-grid>
       <div class="uk-flex-row a15-landing-section">
         <nav class="uk-navbar-container uk-padding ap-nav ap-z-index" uk-navbar style="background: none; overflow: hidden;">
-          <div class="uk-navbar-left">
+          <div class="uk-hidden@m" uk-toggle="target: #offcanvas-nav">
+            <span class="ap-menu-item ap-logo ap-button uk-text-uppercase"> <span uk-icon="menu"></span> The Apollo 15 Learning Hub</span>
+          </div>
+          <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar">
+              <ul class="uk-nav uk-nav-default">
+                <li><a class="ap-menu-item" href="#flight-path">Flight Path</a></li>
+                <li><a class="ap-menu-item" href="https://readux.ecds.emory.edu/collections/emory-control:LSDI-Apollo15/">Data
+                    File</a></li>
+                <li><a class="ap-menu-item" href="https://apollo15hub.org/items/browse">Exhibition</a></li>
+                <li><a class="ap-menu-item" href="https://apollo15hub.org/lunarmodule">Inside the Ship</a></li>
+                <li><a class="ap-menu-item" href="https://apollo15hub.org/about">About</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="uk-navbar-left uk-visible@m">
             <ul class="uk-navbar-nav">
               <li>
-                <a href="/" class="ap-menu-item">
-                  <ul class="uk-list ap-logo">
+                <a href="/" class="ap-menu-item uk-visible@m">
+                  <ul class="uk-list ap-logo uk-visible@m">
                     <li>The</li>
                     <li>Apollo 15</li>
                     <li>Learning Hub</li>
@@ -33,7 +48,7 @@
               </li>
             </ul>
           </div>
-          <div class="uk-navbar-right">
+          <div class="uk-navbar-right uk-visible@m">
             <ul class="uk-navbar-nav">
               <li><a class="ap-menu-item" href="#flight-path">Flight Path</a></li>
               <li><a class="ap-menu-item" href="https://readux.ecds.emory.edu/collections/emory-control:LSDI-Apollo15/">Data File</a></li>
@@ -144,15 +159,19 @@
             </h1>
 
             <nav uk-navbar data-aos="fade-in" uk-sticky uk-sticky-fixed id="navbar">
+             
               <div class="uk-navbar-left">
-                <ul class="uk-navbar-nav">
+                <div class="uk-hidden@m ap-responsive-menu" uk-toggle="target: #offcanvas-nav">
+                  <span class="ap-menu-item ap-logo ap-button uk-text-uppercase"> <span uk-icon="menu"></span> Menu </span>
+                </div>
+                <ul class="uk-navbar-nav uk-visible@m">
                   <li><a class="uk-padding-remove-left uk-text-capitalize" href="/">Flight Path</a></li>
                   <li><a class="uk-text-capitalize" href="https://readux.ecds.emory.edu/collections/emory-control:LSDI-Apollo15/">Data File</a>
                   </li>
                   <li><a class="uk-text-capitalize" href="https://apollo15hub.org/items/browse">Exhibition</a></li>
                 </ul>
               </div>
-              <div class="uk-navbar-right" id="navbar-logo">
+              <div class="uk-navbar-right uk-visible@m" id="navbar-logo">
                 <ul class="uk-navbar-nav">
                   <li><a class="uk-text-capitalize" href="/">Apollo 15</a></li>
                 </ul>
