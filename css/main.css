@@ -1,8 +1,17 @@
 html {
   font-size: 1.25rem; }
 
-*, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
-  font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+* {
+  font-family: 'Titillium Web', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+.uk-navbar-nav > li > a {
+  font-weight: 600;
+}
+
+.uk-navbar-nav > li > a:hover {
+  color: #f1eaae;
+}
 
 section {
   margin: 4rem 0; }
@@ -12,28 +21,31 @@ h2 {
 
 h2,
 h3 {
-  color: white; }
+  color:  #f1f3e6; }
 
 .margin-v2 {
   margin: 2rem 0; }
 
 .object-title {
   font-weight: bold;
-  color: white; }
+  color: #f1f3e6; 
+  padding-right: 30px;
+}
 
 .anchor {
-  color: white; }
+  color:  #f1f3e6; }
   .anchor:hover {
-    color: white;
+    color:  #f1f3e6;
     text-decoration: none; }
 
-.object-action {
-  color: white;
-  opacity: 0.75;
+.object-action, .ap-inline-link {
+  color:  #f1eaae;
+  font-weight: bold;
   transition: opacity 0.2s ease-in-out; }
-  .object-action:hover {
-    opacity: 1;
-    color: white;
+  .object-action:hover, .ap-inline-link:hover {
+    opacity: 1  !important;
+    color:  #f9df58 !important;
+    border-color: #f9df58 !important;
     transition: opacity 0.2s ease-in-out;
     text-decoration: none; }
 
@@ -76,9 +88,11 @@ article {
 .uk-grid {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden; }
+
+
   .uk-grid p,
   .uk-grid h1 {
-    color: white; }
+    color: #f1f3e6; }
   .uk-grid div {
     overflow: auto; }
 
@@ -227,7 +241,7 @@ article {
   margin: 1rem 15rem;
   padding: 2rem;
   background: rgba(96, 96, 96, 0.8);
-  color: white; }
+  color:  #f1f3e6; }
 
 .ap-site-msg-heading {
   font-size: 2.5rem; 
@@ -242,7 +256,7 @@ article {
 
 .ap-site-scroll-container {
   text-align: center;
-  color: white;
+  color:  #f1f3e6;
   background: black;
   display: block;
   margin-left: auto;
@@ -267,11 +281,24 @@ article {
 .ap-z-index {
   z-index: 10; }
 
+.uk-navbar-item,
+.uk-navbar-nav > li > a,
+.uk-navbar-toggle {
+  font-family: 'Titillium Web', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  color: #f9df58;
+}
+
 .ap-menu-item {
-  color: #dddddd !important; }
-  .ap-menu-item:hover {
-    color: white !important;
-    transition: opacity 0.2s ease-in-out; }
+  color: #f9df58 !important; 
+border: 1px solid transparent;
+
+}
+  
+.ap-menu-item:hover {
+  color:  #ffd708 !important;
+  border: 1px solid #d0d0d0;
+  border-radius: 3px; 
+  transition: border 0.2s ease-in-out; }
 
 .ap-home-card {
   filter: grayscale(50%);
@@ -305,4 +332,31 @@ article {
     font-weight: 700;
     padding-bottom: 1rem;
   }
+}
+
+
+blockquote {
+  font-family: 'IM Fell DW Pica', serif;
+  font-family: 'IM Fell English', serif;
+  color: #f1eaae;
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+  content: '\"';
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.note {
+  color: #f1eaae;
+  font-size: 0.75rem;
+}
+
+.uk-navbar-nav>li>a {
+  min-height: 0 !important;
+}
+
+#navbar {
+  height: 80px;
 }
