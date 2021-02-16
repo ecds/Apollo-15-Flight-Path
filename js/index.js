@@ -47,7 +47,7 @@ var fadeAscent = new ScrollMagic.Scene({
   })
   // .addIndicators()
   .addTo(controller);
-// end fadeAcent
+// end fadeAccent
 
 var onEarth = new ScrollMagic.Scene({
     triggerElement: "#trigger-on-earth",
@@ -59,16 +59,22 @@ var onEarth = new ScrollMagic.Scene({
     $(".earth").addClass("on-earth");
     $(".earth").addClass("show");
     $(".moon").addClass("show");
-    $(".flight-path").addClass("show");
+    $(".flight-path").removeClass("on-earth");
+    if (event.scrollDirection === "REVERSE") {
+      $(".ship").removeClass("show-ship");
+      $(".flight-path").removeClass("show");
+    }
   })
   .on("leave", function (event) {
-    $(".flight-path").removeClass("on-earth");
+    $(".flight-path").addClass("show");
     $(".moon").removeClass("on-earth");
     $(".earth").removeClass("on-earth");
+    $(".ship").addClass("show-ship");
     if (event.scrollDirection === "REVERSE") {
       $(".earth").removeClass("show");
       $(".moon").removeClass("show");
       $(".flight-path").removeClass("show");
+      $(".ship").removeClass("show-ship");
     }
   })
   .addTo(controller);
@@ -81,11 +87,20 @@ var landOnMoon = new ScrollMagic.Scene({
     $(".flight-path").addClass("on-moon");
     $(".moon").addClass("on-moon");
     $(".earth").addClass("on-moon");
+    $(".ship").removeClass("show-ship");
+    if (event.scrollDirection === "REVERSE") {
+      $(".lm").removeClass("show-ship");
+    }
   })
   .on("leave", function (event) {
     $(".flight-path").removeClass("on-moon");
     $(".moon").removeClass("on-moon");
     $(".earth").removeClass("on-moon");
+    $(".lm").addClass("show-ship");
+    if (event.scrollDirection === "REVERSE") {
+      $(".ship").addClass("show-ship");
+      $(".lm").removeClass("show-ship");
+    }
   })
   .addTo(controller);
 
@@ -124,6 +139,25 @@ function createLeg(segment, tween) {
     .setTween(tween)
     // .addIndicators() // add indicators (requires plugin)
     .addTo(controller)
+    .on('progress', function(event) {
+      // var scrollPercentage = (event.progress);
+
+      // Get path length
+      var path = segment.path[0];
+      // console.log("🚀 ~ file: index.js ~ line 128 ~ .on ~ event", event.progress, path)
+      var pathLen = path.getTotalLength();
+
+      // Get the position of a point at <scrollPercentage> along the path.
+      var pt = path.getPointAtLength(event.progress * pathLen);
+
+      const ships = [document.getElementById('ship'), document.getElementById('lm')];
+      $.each(ships, function(index, ship) {
+        ship.style.transform = `translate(${pt.x + (document.documentElement.clientWidth / 2)}px, ${pt.y}px)`;
+
+        ship.style.left = `${pt.x + 150}px`
+        ship.style.top = `${pt.y}px`
+      })
+    })
   );
 }
 
