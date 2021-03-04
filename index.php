@@ -220,7 +220,7 @@
                   </p>
                   <blockquote data-aos="fade-in">
                   Again and again we had practiced every aspect of the mission to the highest possible fidelity. Nothing was left to chance. </blockquote>
-                  
+
                   <p class="note">Col. David R. Scott, <span>"Two Sides of the Moon"</span>, 244. All quotations are by Col. Scott from <a class="ap-inline-link" href="https://books.google.com/books?id=Sb9RAQAAQBAJ">"Two sides of the Moon"</a>.
                   </p>
                   <p data-aos="fade-in">
@@ -719,6 +719,8 @@
       </div>
     </div>
   </div>
+  <object data="images/lm.svg" id="lm" class="lm" type="image/svg+xml"></object>
+  <object data="images/ship2.svg" id="ship" class="ship" type="image/svg+xml"></object>
 
 
   <div class="background">
