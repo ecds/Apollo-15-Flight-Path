@@ -305,8 +305,11 @@ article {
 }
 
 .ap-menu-item {
-  color: #f9df58 !important;
+  color: white !important;
 border: 1px solid transparent;
+font-size: 17.5px;
+font-weight: bold !important;
+opacity: 0.9 !important;
 
 }
 
@@ -371,6 +374,7 @@ blockquote {
 
 .uk-navbar-nav>li>a {
   min-height: 0 !important;
+  text-transform: none;
 }
 
 #navbar {

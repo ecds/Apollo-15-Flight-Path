@@ -43,9 +43,7 @@
               <li>
                 <a href="/" class="ap-menu-item uk-visible@m">
                   <ul class="uk-list ap-logo uk-visible@m">
-                    <li>The</li>
-                    <li>Apollo 15</li>
-                    <li>Learning Hub</li>
+                    <li>The Apollo 15 Learning Hub</li>
                   </ul>
                 </a>
               </li>
