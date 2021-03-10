@@ -717,8 +717,9 @@
       </div>
     </div>
   </div>
-  <object data="images/lm.svg" id="lm" class="lm" type="image/svg+xml"></object>
-  <object data="images/ship2.svg" id="ship" class="ship" type="image/svg+xml"></object>
+  #changing the lm to command module for return and the minimal-3d styling.
+  <object data="images/ship4.svg" id="lm" class="lm" type="image/svg+xml"></object>
+  <object data="images/ship3.svg" id="ship" class="ship" type="image/svg+xml"></object>
 
 
   <div class="background">
