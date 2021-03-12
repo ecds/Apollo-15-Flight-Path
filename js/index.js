@@ -152,9 +152,7 @@ function createLeg(segment, tween) {
       const ships = [document.getElementById('ship'), document.getElementById('lm')];
       $.each(ships, function(index, ship) {
         ship.style.transform = `translate(${pt.x + (document.documentElement.clientWidth / 2)}px, ${pt.y}px)`;
-
-        ship.style.left = `${pt.x + (document.getElementById('content').clientWidth / 8) }px`
-        console.log("🚀 ~ file: index.js ~ line 158 ~ $.each ~ pt.x", pt.x, (pt.x + 100), (pt.x * 1.75))
+        ship.style.left = `${pt.x + (document.getElementById('content').clientWidth / 20) }px`
         ship.style.top = `${pt.y}px`
       })
     })
