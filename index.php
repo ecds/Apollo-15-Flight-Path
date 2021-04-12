@@ -710,7 +710,7 @@
           <!-- <object data="images/flight-path.svg" class="flight-path" type="image/svg+xml"></object> -->
           <object data="images/Earth2017.svg" class="earth" type="image/svg+xml"></object>
           <object data="images/moon-color.svg" id="moon" class="moon" type="image/svg+xml"></object>
-          <object data="images/surface.svg" class="surface uk-cover-container" type="image/svg+xml"></object>
+          <object data="/themes/bigpicture/images/surface_EVA1_lm.svg" class="surface uk-cover-container" type="image/svg+xml"></object>
           <object data="images/ship2.svg" id="ship" class="ship" type="image/svg+xml"></object>
           <object data="images/ship4.svg" id="lm" class="lm" type="image/svg+xml"></object>
         </div>
