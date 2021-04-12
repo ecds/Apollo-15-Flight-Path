@@ -150,6 +150,10 @@ article {
   z-index: 2;
 }
 
+.lm {
+  height: 300% !important;
+}
+
 .show-ship,
 .show-lm {
   opacity: 1;

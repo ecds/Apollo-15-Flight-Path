@@ -712,7 +712,7 @@
           <object data="images/moon-color.svg" id="moon" class="moon" type="image/svg+xml"></object>
           <object data="images/surface.svg" class="surface uk-cover-container" type="image/svg+xml"></object>
           <object data="images/ship2.svg" id="ship" class="ship" type="image/svg+xml"></object>
-          <object data="images/lm.svg" id="lm" class="lm" type="image/svg+xml"></object>
+          <object data="images/ship4.svg" id="lm" class="lm" type="image/svg+xml"></object>
         </div>
         <!-- right column -->
 
