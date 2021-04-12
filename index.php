@@ -674,7 +674,7 @@
         <!-- right column -->
         <div class="svg-collection">
           <?xml version="1.0" encoding="utf-8"?>
-          <svg class="flight-path" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          <svg id="field" class="flight-path" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 216.2 448.1"
             style="enable-background:new 0 0 216.2 448.1;" xml:space="preserve">
             <g id="Layer_2_1_">
@@ -709,17 +709,16 @@
           </svg>
           <!-- <object data="images/flight-path.svg" class="flight-path" type="image/svg+xml"></object> -->
           <object data="images/Earth2017.svg" class="earth" type="image/svg+xml"></object>
-          <object data="images/moon-color.svg" class="moon" type="image/svg+xml"></object>
+          <object data="images/moon-color.svg" id="moon" class="moon" type="image/svg+xml"></object>
           <object data="images/surface.svg" class="surface uk-cover-container" type="image/svg+xml"></object>
+          <object data="images/ship2.svg" id="ship" class="ship" type="image/svg+xml"></object>
+          <object data="images/lm.svg" id="lm" class="lm" type="image/svg+xml"></object>
         </div>
         <!-- right column -->
 
       </div>
     </div>
   </div>
-  #changing the lm to command module for return and the minimal-3d styling.
-  <object data="images/ship4.svg" id="lm" class="lm" type="image/svg+xml"></object>
-  <object data="images/ship3.svg" id="ship" class="ship" type="image/svg+xml"></object>
 
 
   <div class="background">
