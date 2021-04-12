@@ -142,17 +142,20 @@ function createLeg(segment, tween) {
     .on('progress', function(event) {
       // var scrollPercentage = (event.progress);
 
+      let content = document.getElementById('flight-path');
       // Get path length
-      var path = segment.path[0];
-      var pathLen = path.getTotalLength();
+      let path = segment.path[0];
+      let pathLen = path.getTotalLength();
+      const rect = document.getElementById('field').getBoundingClientRect()
 
       // Get the position of a point at <scrollPercentage> along the path.
-      var pt = path.getPointAtLength(event.progress * pathLen);
-
+      const pt = path.getPointAtLength(event.progress * pathLen);
+      // dot.setAttribute("transform", "translate("+ pt.x + "," + pt.y + ")");
       const ships = [document.getElementById('ship'), document.getElementById('lm')];
+      const offset = document.documentElement.clientWidth / 2;
       $.each(ships, function(index, ship) {
-        ship.style.transform = `translate(${pt.x + (document.documentElement.clientWidth / 2)}px, ${pt.y}px)`;
-        ship.style.left = `${pt.x + (document.getElementById('content').clientWidth / 20) }px`
+        ship.style.transform = `translate(${pt.x}px, ${pt.y}px)`;
+        ship.style.left = `${pt.x + rect.x}px`
         ship.style.top = `${pt.y}px`
       })
     })
