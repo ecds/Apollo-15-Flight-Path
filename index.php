@@ -7,7 +7,7 @@
   <title>Apollo 15</title>
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css">
-  <link rel="stylesheet" type="text/css" href="css/aos-2.3.4.css">
+  <link rel="stylesheet" type="text/css" href="/themes/bigpicture/css/aos-2.3.4.css">
   <link rel="stylesheet" href="/themes/bigpicture/css/main.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
