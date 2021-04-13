@@ -147,16 +147,20 @@ function createLeg(segment, tween) {
       let path = segment.path[0];
       let pathLen = path.getTotalLength();
       const rect = document.getElementById('field').getBoundingClientRect()
-
+      const pathRect = path.getBBox();
+      // console.log("🚀 ~ file: index.js ~ line 151 ~ .on ~ pathRect", pathRect)
       // Get the position of a point at <scrollPercentage> along the path.
       const pt = path.getPointAtLength(event.progress * pathLen);
+      console.log("🚀 ~ file: index.js ~ line 154 ~ .on ~ pt", pt)
       // dot.setAttribute("transform", "translate("+ pt.x + "," + pt.y + ")");
       const ships = [document.getElementById('ship'), document.getElementById('lm')];
-      const offset = document.documentElement.clientWidth / 2;
+      const offsetY = pt.y * 2 - 200;
       $.each(ships, function(index, ship) {
-        ship.style.transform = `translate(${pt.x}px, ${pt.y}px)`;
-        ship.style.left = `${pt.x + rect.x}px`
-        ship.style.top = `${pt.y}px`
+        // ship.style.transform = `translate(${pt.x}px, ${pt.y}px)`;
+        // ship.style.left = `${pt.x}px`
+        // ship.style.top = `${pt.y}px`
+        // ship.setAttribute("transform", "translate("+ pt.x + "," + pt.y + ")");
+        ship.setAttribute("transform", `translate(${pt.x - 50},${pt.y})`);
       })
     })
   );
