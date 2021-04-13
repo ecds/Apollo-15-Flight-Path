@@ -100,8 +100,10 @@ article {
 .earth,
 .moon {
   opacity: 0;
+  top: 5vh;
   transition: transform 2s linear, top 2s linear, opacity .5s linear;
-  transform-origin: center; }
+  transform-origin: center;
+}
 
 .flight-path.show,
 .earth.show,
@@ -150,17 +152,17 @@ article {
   z-index: 2;
 }
 
-.lm {
-  height: 300% !important;
-}
-
 .show-ship,
 .show-lm {
   opacity: 1;
 }
 
 .flight-path {
-  z-index: 2; }
+  height: 140vh !important;
+  right: 3vw !important;
+  top: -5vh;
+  z-index: 2;
+}
 
 .on-earth.flight-path {
   transform: scale(2.5, 2.5) translate(-6vh, 25vh); }
