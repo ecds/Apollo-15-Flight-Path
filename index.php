@@ -7,8 +7,8 @@
   <title>Apollo 15</title>
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css">
-  <link rel="stylesheet" type="text/css" href="css/aos-2.3.4.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="/themes/bigpicture/css/aos-2.3.4.css">
+  <link rel="stylesheet" href="/themes/bigpicture/css/main.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@1&family=IM+Fell+English:ital@1&display=swap"
     rel="stylesheet">
@@ -712,7 +712,7 @@
           <!-- <object data="images/flight-path.svg" class="flight-path" type="image/svg+xml"></object> -->
           <object data="images/Earth2017.svg" class="earth" type="image/svg+xml"></object>
           <object data="images/moon-color.svg" id="moon" class="moon" type="image/svg+xml"></object>
-          <object data="images/surface_EVA1_lm.svg" class="surface uk-cover-container" type="image/svg+xml"></object>
+          <object data="/themes/bigpicture/images/surface_EVA1_lm.svg" class="surface uk-cover-container" type="image/svg+xml"></object>
           <!-- <object data="images/ship3b.svg" id="ship" class="ship" type="image/svg+xml"></object> -->
           <!-- <object data="images/ship4.svg" id="lm" class="lm" type="image/svg+xml"></object> -->
         </div>
@@ -737,7 +737,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
 <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script src="js/index.js"></script>
+<script src="/themes/bigpicture/js/index.js"></script>
 
 </html>
 ' ?>
