@@ -368,13 +368,16 @@
                 }
 
                 .ap-category-box:hover .ap-category-label {
-                    color: black;
                     transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
                 }
 
                 .ap-category-label {
-                    word-spacing: 100vw;
+                    /* word-spacing: 100vw; */
                     color: black;
+                }
+
+                .ap-category-icon {
+                    color: grey;
                 }
 
                 .ap-category-caption {
@@ -388,6 +391,7 @@
                     padding: 0.25rem 0.75rem;
                     opacity: 0.85;
                 }
+
                 .ap-category-caption {
                     font-size: 1.25rem;
                 }
@@ -403,92 +407,152 @@
 
             <div id="primary">
                 <p id="simple-pages-breadcrumbs"><a href="https://apollo15hub.org/">Home</a> &gt; Apollo 15 Media</p>
-                
 
-                <div class="uk-container">
+
+                <div class="uk-container uk-text-center">
                     <h1 class="ap-h1">Apollo 15 Media</h1>
 
+
+
+
                     <h2 class="ap-category-caption">Search for Media by Collection</h2>
-                    <div class="uk-text-center" uk-grid uk-height-match="target: > div > .uk-card">
-                        <a href="https://apollo15hub.org/collections/show/5"
-                            class="ap-category-box uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle uk-width-1-6@m">
-                            <div class="ap-category-label">Training for the Mission</div>
-                        </a>
 
-                        <a href="https://apollo15hub.org/collections/show/3"
-                            class="ap-category-box uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle uk-width-1-6@m">
-                            <div class="ap-category-label">Discovery:
-                                Geological and Scientific Research</div>
-                        </a>
 
-                        <a href="https://apollo15hub.org/collections/show/2"
-                            class="ap-category-box uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle uk-width-1-6@m">
-                            <div class="ap-category-label">Exploration
-                                during the Mission</div>
-                        </a>
-
-                        <a href="https://apollo15hub.org/collections/show/1"
-                            class="ap-category-box uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle uk-width-1-6@m">
-                            <div class="ap-category-label">Innovation:
-                                Technological Achievements</div>
-                        </a>
+                    <div class="uk-child-width-1-4@m  uk-child-width-1-2@s uk-child-width-1-1@xs grid-collapse uk-margin-large-bottom" uk-grid>
+                        <div><a href="https://apollo15hub.org/collections/show/5" class="ap-home-card ap-z-index">
+                                <div class="uk-inline a15-card ">
+                                    <img src="discovery.jpg" alt="">
+                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
+                                        <p class="ap-category-label">Training for the Mission</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://apollo15hub.org/collections/show/3" class="ap-home-card ap-z-index">
+                                <div class="uk-inline a15-card">
+                                    <img src="discovery.jpg" alt="">
+                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
+                                        <p class="ap-category-label">Discovery:
+                                            Geological and Scientific Research</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://apollo15hub.org/collections/show/2" class="ap-home-card ap-z-index">
+                                <div class="uk-inline a15-card">
+                                    <img src="exploration.jpg" alt="">
+                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
+                                        <p class="ap-category-label">Exploration
+                                            during the Mission</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://apollo15hub.org/collections/show/1" class="ap-home-card ap-z-index">
+                                <div class="uk-inline a15-card">
+                                    <img src="innovation.jpg" alt="">
+                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
+                                        <p class="ap-category-label">Innovation:
+                                            Technological Achievements</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <h2 class="ap-category-caption">Search by Media Type</h2>
-                    <div class="uk-text-center" uk-grid uk-height-match="target: > div > .uk-card">
-                        <a href="https://apollo15hub.org/items/browse?search=&amp;advanced%5B0%5D%5Bjoiner%5D=and&amp;advanced%5B0%5D%5Belement_id%5D=&amp;advanced%5B0%5D%5Btype%5D=&amp;advanced%5B0%5D%5Bterms%5D=&amp;range=&amp;collection=&amp;type=3&amp;user=&amp;tags=&amp;public=&amp;featured=&amp;exhibit=&amp;submit_search=Search+for+items"
-                            class="ap-category-box uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle uk-width-1-6@m"
-                            title="Videos">
-                            <div class="ap-category-label">Videos</div>
-                        </a>
 
-                        <a href="https://apollo15hub.org/items/browse?search=&amp;advanced%5B0%5D%5Bjoiner%5D=and&amp;advanced%5B0%5D%5Belement_id%5D=&amp;advanced%5B0%5D%5Btype%5D=&amp;advanced%5B0%5D%5Bterms%5D=&amp;range=&amp;collection=&amp;type=6&amp;user=&amp;tags=&amp;public=&amp;featured=&amp;exhibit=&amp;submit_search=Search+for+items"
-                            class="ap-category-box uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle uk-width-1-6@m"
-                            title="Images">
-                            <div class="ap-category-label">Images</div>
-                        </a>
+                    <div class="uk-child-width-1-8@m uk-child-width-1-3@s uk-child-width-1-2@xs grid-collapse uk-margin-large-bottom" uk-grid>
+                        <div><a href="https://apollo15hub.org/collections/show/5" class="ap-home-card ap-z-index">
+                                <div class="uk-inline a15-card ">
+                                    <div uk-icon="icon: video-camera; ratio: 8;" class="ap-category-icon"></div>
+                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
+                                        <p class="ap-category-label">Videos</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://apollo15hub.org/collections/show/3" class="ap-home-card ap-z-index">
+                                <div class="uk-inline a15-card">
+                                    <div uk-icon="icon: image; ratio: 8;" class="ap-category-icon"></div>
+                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
+                                        <p class="ap-category-label">Images</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://apollo15hub.org/collections/show/2" class="ap-home-card ap-z-index">
+                                <div class="uk-inline a15-card">
+                                    <div uk-icon="icon: pencil; ratio: 8;" class="ap-category-icon"></div>
+                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
+                                        <p class="ap-category-label">Articles</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://apollo15hub.org/collections/show/1" class="ap-home-card ap-z-index">
+                                <div class="uk-inline a15-card">
+                                    <div uk-icon="icon: server; ratio: 8;" class="ap-category-icon"></div>
+                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
+                                        <p class="ap-category-label">External Websites</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://apollo15hub.org/collections/show/1" class="ap-home-card ap-z-index">
+                                <div class="uk-inline a15-card">
+                                    <div uk-icon="icon: file-text; ratio: 8;" class="ap-category-icon"></div>
 
-                        <a href="https://apollo15hub.org/items/browse?search=&amp;advanced%5B0%5D%5Bjoiner%5D=and&amp;advanced%5B0%5D%5Belement_id%5D=&amp;advanced%5B0%5D%5Btype%5D=&amp;advanced%5B0%5D%5Bterms%5D=&amp;range=&amp;collection=&amp;type=11&amp;user=&amp;tags=&amp;public=&amp;featured=&amp;exhibit=&amp;submit_search=Search+for+items"
-                            class="ap-category-box uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle uk-width-1-6@m"
-                            title="Articles">
-                            <div class="ap-category-label">Articles</div>
-                        </a>
-
-                        <a href="https://apollo15hub.org/items/browse?search=&amp;advanced%5B0%5D%5Bjoiner%5D=and&amp;advanced%5B0%5D%5Belement_id%5D=&amp;advanced%5B0%5D%5Btype%5D=&amp;advanced%5B0%5D%5Bterms%5D=&amp;range=&amp;collection=&amp;type=7&amp;user=&amp;tags=&amp;public=&amp;featured=&amp;exhibit=&amp;submit_search=Search+for+items"
-                            class="ap-category-box uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle uk-width-1-6@m"
-                            title="External Websites">
-                            <div class="ap-category-label">External Websites</div>
-                        </a>
-
-                        <a href="https://apollo15hub.org/items/browse?search=&amp;advanced%5B0%5D%5Bjoiner%5D=and&amp;advanced%5B0%5D%5Belement_id%5D=&amp;advanced%5B0%5D%5Btype%5D=&amp;advanced%5B0%5D%5Bterms%5D=&amp;range=&amp;collection=&amp;type=1&amp;user=&amp;tags=&amp;public=&amp;featured=&amp;exhibit=&amp;submit_search=Search+for+items"
-                            class="ap-category-box uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle uk-width-1-6@m"
-                            title="Text Documents">
-                            <div class="ap-category-label">Text Documents</div>
-                        </a>
-
+                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
+                                        <p class="ap-category-label">Text Documents</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
+
 
                     <h2 class="ap-category-caption">Search by Source Type</h2>
-                    <div class="uk-text-center" uk-grid uk-height-match="target: > div > .uk-card">
-                        <a href="https://apollo15hub.org/items/browse?search=&amp;advanced%5B0%5D%5Bjoiner%5D=and&amp;advanced%5B0%5D%5Belement_id%5D=43&amp;advanced%5B0%5D%5Btype%5D=contains&amp;advanced%5B0%5D%5Bterms%5D=Original&amp;range=&amp;collection=&amp;type=&amp;user=&amp;tags=&amp;public=&amp;featured=&amp;exhibit=&amp;submit_search=Search+for+items"
-                            class="ap-category-box uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle uk-width-1-6@m"
-                            title="Primary Source">
-                            <div class="ap-category-label">Primary Source</div>
-                        </a>
-                        <a href="https://apollo15hub.org/items/browse?search=&amp;advanced%5B0%5D%5Bjoiner%5D=and&amp;advanced%5B0%5D%5Belement_id%5D=43&amp;advanced%5B0%5D%5Btype%5D=contains&amp;advanced%5B0%5D%5Bterms%5D=Revised&amp;range=&amp;collection=&amp;type=&amp;user=&amp;tags=&amp;public=&amp;featured=&amp;exhibit=&amp;submit_search=Search+for+items"
-                            class="ap-category-box uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle uk-width-1-6@m"
-                            title="Source Revised from Primary Source">
-                            <div class="ap-category-label">Source Revised from Primary Source</div>
-                        </a>
+                    <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-child-width-1-1@xs grid-collapse uk-margin-large-bottom" uk-grid>
+                        <div><a href="https://apollo15hub.org/items/browse?search=&amp;advanced%5B0%5D%5Bjoiner%5D=and&amp;advanced%5B0%5D%5Belement_id%5D=43&amp;advanced%5B0%5D%5Btype%5D=contains&amp;advanced%5B0%5D%5Bterms%5D=Original&amp;range=&amp;collection=&amp;type=&amp;user=&amp;tags=&amp;public=&amp;featured=&amp;exhibit=&amp;submit_search=Search+for+items"
+                                class="ap-home-card ap-z-index">
+                                <div class="uk-inline a15-card ">
+                                    <img src="primary.jpg" alt="">
+                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
+                                        <p class="ap-category-label">Primary Source</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://apollo15hub.org/items/browse?search=&amp;advanced%5B0%5D%5Bjoiner%5D=and&amp;advanced%5B0%5D%5Belement_id%5D=43&amp;advanced%5B0%5D%5Btype%5D=contains&amp;advanced%5B0%5D%5Bterms%5D=Revised&amp;range=&amp;collection=&amp;type=&amp;user=&amp;tags=&amp;public=&amp;featured=&amp;exhibit=&amp;submit_search=Search+for+items"
+                                class="ap-home-card ap-z-index">
+                                <div class="uk-inline a15-card">
+                                    <img src="revised.jpg" alt="">
+                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
+                                        <p class="ap-category-label">Source Revised from Primary Source</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
 
-                    <h2 class="ap-category-caption">Search by
+
+                    <h2 class="ap-category-caption uk-margin-large-bottom">Search by
                         <a href="https://apollo15hub.org/items/tags" title="Source Revised from Primary Source">
                             <span class="ap-category-span-inline">Topic</span>
                         </a>
                     </h2>
 
-                    <h2 class="ap-category-caption">Browse
+                    <h2 class="ap-category-caption uk-margin-large-bottom">Browse
                         <a href="https://apollo15hub.org/items/browse" title="Source Revised from Primary Source">
                             <span class="ap-category-span-inline">All</span>
                         </a>
