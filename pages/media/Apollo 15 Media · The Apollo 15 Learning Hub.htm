@@ -1,42 +1,70 @@
 <!DOCTYPE html>
-<!-- saved from url=(0029)https://apollo15hub.org/media -->
 <html lang="en-US">
-<script type="text/javascript" async=""
-    src="./Apollo 15 Media · The Apollo 15 Learning Hub_files/analytics.js"></script>
-<script id="allow-copy_script">(function agent() {
-        let unlock = false
-        document.addEventListener('allow_copy', (event) => {
-            unlock = event.detail.unlock
-        })
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apollo 15 Media · The Apollo 15 Learning Hub</title>
 
-        const copyEvents = [
-            'copy',
-            'cut',
-            'contextmenu',
-            'selectstart',
-            'mousedown',
-            'mouseup',
-            'mousemove',
-            'keydown',
-            'keypress',
-            'keyup',
-        ]
-        const rejectOtherHandlers = (e) => {
-            if (unlock) {
-                e.stopPropagation()
-                if (e.stopImmediatePropagation) e.stopImmediatePropagation()
-            }
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/css/uikit.min.css"
+    />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit-icons.min.js"></script>
+    
+    <!-- Customized style for this page-->
+    <style>
+        .ap-category-box {
+            padding: 0.5rem 2rem;
+            text-align: left;
+            font-size: 1rem;
+            opacity: 0.75 !important;
+            font-weight: bold;
         }
-        copyEvents.forEach((evt) => {
-            document.documentElement.addEventListener(evt, rejectOtherHandlers, {
-                capture: true,
-            })
-        })
-    })()</script>
+    
+        .ap-category-box:hover {
+            background: #dfdfdf;
+        }
+    
+        .ap-category-box:hover .ap-category-label {
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    
+        .ap-category-label {
+            /* word-spacing: 100vw; */
+            color: black;
+        }
+    
+        .ap-category-icon {
+            color: grey;
+        }
+    
+        .ap-category-caption {
+            color: white;
+        }
+    
+        .ap-category-span-inline {
+            display: inline-block;
+            background: white;
+            color: black;
+            padding: 0.25rem 0.75rem;
+            opacity: 0.85;
+        }
+    
+        .ap-category-caption {
+            font-size: 1.25rem;
+        }
+    
+        .ap-h1 {
+            color: white;
+        }
+    </style>
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <style id="stndz-style">
+
+    <!-- <style id="stndz-style">
         div[class*="item-container-obpd"],
         a[data-redirect*="paid.outbrain.com"],
         a[onmousedown*="paid.outbrain.com"] {
@@ -60,529 +88,669 @@
         .zergnet-widget-related {
             display: none !important;
         }
-    </style>
+    </style> -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Apollo 15 Media · The Apollo 15 Learning Hub</title>
-
-    <link rel="alternate" type="application/rss+xml" title="Omeka RSS Feed"
-        href="https://apollo15hub.org/items/browse?output=rss2">
-    <link rel="alternate" type="application/atom+xml" title="Omeka Atom Feed"
-        href="https://apollo15hub.org/items/browse?output=atom">
-    <!-- Plugin Stuff -->
-
-    <!-- Stylesheets -->
-    <link href="./Apollo 15 Media · The Apollo 15 Learning Hub_files/mediaelementplayer-legacy.min.css" media="all"
-        rel="stylesheet" type="text/css">
-    <link href="./Apollo 15 Media · The Apollo 15 Learning Hub_files/html5media.css" media="all" rel="stylesheet"
-        type="text/css">
-    <link href="./Apollo 15 Media · The Apollo 15 Learning Hub_files/css" media="screen" rel="stylesheet"
-        type="text/css">
-    <link href="./Apollo 15 Media · The Apollo 15 Learning Hub_files/admin-bar.css" media="screen" rel="stylesheet"
-        type="text/css">
-    <link href="./Apollo 15 Media · The Apollo 15 Learning Hub_files/normalize.css" media="all" rel="stylesheet"
-        type="text/css">
-    <link href="./Apollo 15 Media · The Apollo 15 Learning Hub_files/jquery.mmenu.css" media="all" rel="stylesheet"
-        type="text/css">
-    <link href="./Apollo 15 Media · The Apollo 15 Learning Hub_files/jquery.mmenu.positioning.css" media="all"
-        rel="stylesheet" type="text/css">
-    <link href="./Apollo 15 Media · The Apollo 15 Learning Hub_files/style.css" media="all" rel="stylesheet"
-        type="text/css">
-    <link href="./Apollo 15 Media · The Apollo 15 Learning Hub_files/css(1)" media="all" rel="stylesheet"
-        type="text/css">
-    <!-- JavaScripts -->
-    <script type="text/javascript" src="./Apollo 15 Media · The Apollo 15 Learning Hub_files/jquery.min.js"></script>
-    <script type="text/javascript">
-        //<!--
-        window.jQuery || document.write("<script type=\"text\/javascript\" src=\"\/application\/views\/scripts\/javascripts\/vendor\/jquery.js?v=2.8\" charset=\"utf-8\"><\/script>")    //-->
-    </script>
-    <script type="text/javascript" src="./Apollo 15 Media · The Apollo 15 Learning Hub_files/jquery-ui.min.js"></script>
-    <script type="text/javascript">
-        //<!--
-        window.jQuery.ui || document.write("<script type=\"text\/javascript\" src=\"\/application\/views\/scripts\/javascripts\/vendor\/jquery-ui.js?v=2.8\" charset=\"utf-8\"><\/script>")    //-->
-    </script>
-    <script type="text/javascript">
-        //<!--
-        jQuery.noConflict();    //-->
-    </script>
-    <script type="text/javascript"
-        src="./Apollo 15 Media · The Apollo 15 Learning Hub_files/mediaelement-and-player.min.js"></script>
-    <script type="text/javascript" async="async" src="./Apollo 15 Media · The Apollo 15 Learning Hub_files/js"></script>
-    <script type="text/javascript">
-        //<!--
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', "UA-51682905-23");
-                //-->
-    </script>
-    <script type="text/javascript"
-        src="./Apollo 15 Media · The Apollo 15 Learning Hub_files/jquery.mmenu.min.js"></script>
-    <script type="text/javascript" src="./Apollo 15 Media · The Apollo 15 Learning Hub_files/bigpicture.js"></script>
-    <style>
+    <!-- <style>
         @font-face {
             font-family: "wticons";
             src: url("data:font/woff2;charset=utf-8;base64,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") format("woff2");
         }
-
+    
         .wticons {
             line-height: 1;
         }
-
+    
         .wticons:before {
             font-family: wticons !important;
             font-style: normal;
             font-weight: normal !important;
             vertical-align: top;
         }
-
+    
         .wticon-account:before {
             content: "\f101";
         }
-
+    
         .wticon-add:before {
             content: "\f102";
         }
-
+    
         .wticon-casual:before {
             content: "\f103";
         }
-
+    
         .wticon-check:before {
             content: "\f104";
         }
-
+    
         .wticon-checkSmall:before {
             content: "\f105";
         }
-
+    
         .wticon-chevron:before {
             content: "\f106";
         }
-
+    
         .wticon-copy:before {
             content: "\f107";
         }
-
+    
         .wticon-copySmall:before {
             content: "\f108";
         }
-
+    
         .wticon-dismiss:before {
             content: "\f109";
         }
-
+    
         .wticon-error:before {
             content: "\f10a";
         }
-
+    
         .wticon-expand:before {
             content: "\f10b";
         }
-
+    
         .wticon-feedback:before {
             content: "\f10c";
         }
-
+    
         .wticon-find:before {
             content: "\f10d";
         }
-
+    
         .wticon-formal:before {
             content: "\f10e";
         }
-
+    
         .wticon-grayLogo:before {
             content: "\f10f";
         }
-
+    
         .wticon-ignore:before {
             content: "\f110";
         }
-
+    
         .wticon-info:before {
             content: "\f111";
         }
-
+    
         .wticon-leftChevron:before {
             content: "\f112";
         }
-
+    
         .wticon-logo:before {
             content: "\f113";
         }
-
+    
         .wticon-love:before {
             content: "\f114";
         }
-
+    
         .wticon-paste:before {
             content: "\f115";
         }
-
+    
         .wticon-pin:before {
             content: "\f116";
         }
-
+    
         .wticon-premium:before {
             content: "\f117";
         }
-
+    
         .wticon-premiumDetail:before {
             content: "\f118";
         }
-
+    
         .wticon-premiumFull:before {
             content: "\f119";
         }
-
+    
         .wticon-refine:before {
             content: "\f11a";
         }
-
+    
         .wticon-rewrite:before {
             content: "\f11b";
         }
-
+    
         .wticon-rightChevron:before {
             content: "\f11c";
         }
-
+    
         .wticon-rocket:before {
             content: "\f11d";
         }
-
+    
         .wticon-sentenceExamples:before {
             content: "\f11e";
         }
-
+    
         .wticon-shorten:before {
             content: "\f11f";
         }
-
+    
         .wticon-unlock:before {
             content: "\f120";
         }
-
+    
         .wticon-warn:before {
             content: "\f121";
         }
-
+    
         .wticon-WordtuneButton:before {
             content: "\f122";
         }
-
+    
         .wticon-x:before {
             content: "\f123";
         }
-
+    
         /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvc2hhcmVkL0ljb25zLmZvbnQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Q0FDQyxzQkFBc0I7Q0FDdEIseWxQQUF5bFA7QUFDMWxQOztBQUVBO0NBQ0MsY0FBYztBQUNmOztBQUVBO0NBQ0MsK0JBQStCO0NBQy9CLGtCQUFrQjtDQUNsQiw4QkFBOEI7Q0FDOUIsbUJBQW1CO0FBQ3BCOztBQUVBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakIiLCJzb3VyY2VzQ29udGVudCI6WyJAZm9udC1mYWNlIHtcblx0Zm9udC1mYW1pbHk6IFwid3RpY29uc1wiO1xuXHRzcmM6IHVybChcImRhdGE6Zm9udC93b2ZmMjtjaGFyc2V0PXV0Zi04O2Jhc2U2NCxkMDlHTWdBQkFBQUFBQmFRQUFzQUFBQUFOTGdBQUJZK0FBRUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBSElZU0JsWUFpallLeVNDNld3RTJBaVFEZ2l3TGdSZ0FCQ0FGaEFvSGhHd2JGQ3hWSWJCeEFEOEVXWWxrLzM5TG9HUHMzQnlnWmdraFJFeFZ5TzdZS2lXdTdQSnJaRHZLN2d5SGg4cGo5L0NyRkpPOFBOWGJIR0VQdzhud3BURVZWalpGM09hYjl3cDdiNXI2N1QvUFVFb2VIdTdIZTk3NzJiSEtCbW9lY0FJMjZJQ0cwd3NSdU9tQlIxenhmdFNYWWU3d3RNMS9jSVFKcmRpRWlBTXJBWXVlMEFkV0lzdkFwVkVzQTdmV2hicTVhRjBucTJiUkxuVHIvekZxZno5NzRnTVUrZzg1MDA5Mi8zNW5oODBFS1JDRnJHbGQ2M0pVbWdJSWFJRC80SlNEODBLZWZGQTFmdDZjK2xMaElpVkZReEZHQklJT09MRHhrWHl4L2xGNi8rWW1KVWg0Qk9EWXZTTGQvMjkvL3N3clBveC9XSHk4eld6eW1VS1FLeEJlQ0pVSStQL1grdFdkajRoVkx2b09CODhpM2dqWjM3NlpMMi9lZkpQWmg5bXkyUHlQN1M3aW5rUnNCWE52ZUliSUlXUXFtVU1pY21pTmJqVkRTSVNHYnJWenZvUGJUQS9FZWdUNU1EWjdIekQ5Y1dHelJsU0doYjF3RjNrc0Vzam5PbEUzdC9jZVZYejMwdFA3NnVuY01SUHMya3p1M3JweFNhN2pUOCtJbmJCUGEvb0p4Zm91dnZucGI1TXM4M3pTTFpKR2RUbXRUcHVSTXBXcExHc3ZRNGZMNDlPRTRQQk5hVU1iSDhkZGxpUHVqMWpiMk5wWmlheGxKOFU0ams0aWo3R1V0cjUzNFBBWVRDc2hONnVXeVNpalJweXVhYTdRVFprOGh6bHlJbGluV001Q3U0aUZwb2FkR3NzU0l3a1IxbHYvR0xTeWN4UVJvVW50TlJ5SDdEZXBzWFhOVlNTSWkzRVA0MWpOQkg0ek1zUW14NTdVUTR0MjZxYWxvMVhZUUpyaG9LNDkwTVVOQ2IxRmF0S1o5MzI2VEdjREZ2RzI2R3dFN3pQcjduQ0ZSNHlZM2R4YjRUTWtUVjBjZEZhTGxBUHBzc20xODh4Yy9zcFpwQ2NocHkvUWlJN1pac2w0a3pIZ3BFN2VvdFVuZFVjbzhadXhEbWhGbWM2amJHU0FVcStieXJIRGlzRFZrR21zWUtUbllYSjVubDRTQzZabmZVVzJnNVdUKy9BUmlUcWoyL3pBTytBTGFWMGU4TTh2cmZnWjVSUG1aTEowSGRSOVlPSGtIZXZCMGRuRnVoMTJTZElmWElnc0ZHV20zOEVIL3Z5VGY3d2tSY3JJNEI3RXdldGJWLzEyaXgzNkQ2Y3ozbDB4NjRZc3lJREJxeWtnTFpiV1MzSnBHOU1nVGZ6aGZPaitvVnlXUnZXeTF4RW4zUExRcTloZFlWMU0rNUk3SGdlNjRqWkw1TlU5Tmo5bjlwN2RObTNaYWR1R09WOURyb1lGNTRlNmJ2ckJ0QkhaVFJNOU9pd2NPdFBlMitEMUVrZWo3NDNGRnBlUWtwYVJrMWVZNE1NcnE2aXFhMmhwNitqcUd4Z2FHWnM0cittWnVTV1NiSzdUM1p0Yk83ZkJCaXVkT2RqRmJHaHRIY2psTnQyWk9sTTd6Mm5KZDhDazcrN2Z5eE9rOVVLUTBZdmUxd1BQM2UwaHlIWXoyNjBLZDJJN3dsN1l3QkdZZ3hPd0M1ZGdDQzdER3E3QU1GeUZDYmdHTTNBZFZuRUQxbkVUcHVFV3JNQWRtSVc3TUFYM1lCN3V3eGc4Z0JGNENFdndHQmJoQ1V6Q1V4aUhaekFLejJFQlhzQU92SVJCZUpWOEdRRVpWd2hBQmdKa0loRFpDSTdJUVFoRUxrSWk4aEVLVVlEUWlDS0VRUlFqTEtJRTRSQmxDSThvUndSRUJTSWlLaEVKb2dxUklxb1JHYUlHa1NOcUVRV2lIbEVpR2hBVm9nbFJJNW9SRGFJRjBTSmFFUjJpSGRFak9oQURvaE14SXJvUUU2SWJNU042RUl1dlhpZ3JmUFZCMmVDckg4b09jYW80ZTZLdGZNUnJDdjdnUG56bkJzRE14VGNQekc5Q1BPbEpna0Fxc0ZwQytRSXFVNUxUcGdRU0pSTEtCN2VkcE5tclhFTTVlRCtVSzJjbWRFQUZxYTRUUmxwMkpXUGxPUEJRUWpEYUxPWDBtUHBQZmFiVHlydTZiYVV5RExSVXFDUHFkNmpXTGwyWWl5TEJTM05qSEY2bWNIMXFSa0xzQ1d0emsvZjlzQ3c2YXYwWGZ1UHVERmlTdUI3YnBvWFlpdnV4QmZQK1h6dVNXL1owMGNPUEMrNHZlVHpscGdjRmY3ZmJWL1RIMmdLdzNaUGkzaS8xNDQzOStydjhlVmVUa2Z1R0Q0YlFJbmpjcG05MnlxUDhXdi9oK3UwdVQ1THZhMXpySkJNd2trTXlvVGw5QUtEN3owR1JmZWNMcmxTK0Q0VkhDT0pNNzF3YVFoY3FaQXpDeXV2S0xVWFpIaHJkbDdvVjZLcHpVeWlaeXAxWUFma2JsT0RTSUYxdnh2NkRnK29mTEJWL1R3ZExBeW42UXYxd01VanA5QVdxd0N0WUxGNkdnc1hxNVgya3NubVJ2Wnp1WjZmNm9iTytrZm16UHVqdFJCOTAxaSsxTGRrVm8rMkpTWk9YeWIvaUh3NnlnV0Y1NjlNSFBSeHlFbFVwSVpGby9OckVpL0d4S2FSYy9iRi9vd0JOWWhSMVBEK0pscGtmV01MdGtKNEFTWnJ2eXNGblFaR2RZU292Y2pKalp6R3pNdzl6SXEreTVIZ2VGbnZIZmRneUJsWU9zZkozMDZ5YUhoZlhSTXRsbFNEYmtLWFNaZVdVYVBwTzNlUlVOM2ViWFl4anlDQWlIQUdHd0J3THNaRzNIa0xTZmQxQWtQeitHb0JxNEFDQ0FXQy8rVEc5dnIvZU5WQjkrL09pTGVCRHBvSExqdGJYNE5MKzJzSDZVYjk1Y01TSXhRekRjVTROMVF3MXVDUlNjV3I2dE90VFFqSWRDZTVPbDJIRWpGU2RvV1dXZERpYWswaWxja2QyQnVvRzZnZmJlVDBVSi9wSWJWT0gyc3JNZ0k1anhNekIwVnZoWVNKcVhOOU1yOTVmQ3hveVZHUHIvWHF2dFdXc2xxZW5tOFpJMDRqZlBEcDcwSXdUejZTYTN2RUZ0Z24xaDl3WjJpRVdTZlZOVDQrYzF0L2pQb01qZFQrWmgvcE8vby9KLy9jWEdVNno0MEpjeFQzb29COGJIemgwZWJpWWY4OVhoYmwzN0RtM1hlbk5ld3VENHEvOGJmOHAvSXVTRkpJenJnT0Fpakc0dHp5dlR1RVNCRE5MN2lNVithNk9YYXdXUHBsS3hOMnY4dlB0NjhSU2ZidDNDcGdpVkR3SDdXQVF4RVVJRGkxNW5KZnkvYzNZVTdOWVRjL0RTOEJBTWUwaUM1aVNLWFozQnFmbnU5TllGUzRFaG45ZzlXMDZ2ZTdtVjd4R2FXZmVBVFliK1psekF3M1dLclFDZ1hKNCtwcUlFNkJGK211RjRxRGJTMFEvUTh1Q1A4Y0x4ekxRb1NnTGhmbTVVUzdGUWI4K3U0UUxHQzJSa0V6WFRBZVlWNHlGUjdrLzJQOGV5NE5UWFB4dkV3bTdkTXJsYjJEZm1abGRtZDJybS8rbXY1cCs2eDRVZjVIOFBHWEdyTnhYSW53ZnF5OVQ4OSt3S2hTQVBlUDZDcWFYMmJObjM5OXBMMmNOZHBOcDFxQnJXSUlNVHpDejdPdGFRbmJGRHVxOFVpK09uODIrb01UUjRDQkRNcmR3Uzh1V0NtanhYTjhNT2tKWXpBR0VPTDA2cFUwM2NoNlBuUlFqeWFnSy9oczVpQUJtd0VNWUFFR211akZBRUNkcm9aZTdIOXAyWGVsNXNIc2V4elVhOS9GTms2SVY5U29rdDNScTNXMjNCbXgzZ1V1cVBQYlFnK0xkTDhGd2ZjcU4yKzdrZm5QdTVxUGZjR0dsekVic0s3RHlDREtvUXVhTzhjRm51Rnc5MFduV25STEt1Tk1pdVFtcjhUblFzajhrd1VBM3pHdWxia2Q2ZU9QY1htVzI3MzZmWG9MUi9PUTBGa3VoTW5sZkkzMjEvYlY2T0t1T0ZYR1dUQytYbkNDaDljUkptNGRvbERKcFFQYTRxMFlGWFRpdWx3MCt0Z2dKaCtnNXVlVHhpc3dNbi9yckR6eWIvbXIyTGZqOVV5RG5VdWNvSjlUL1k0S2lqc2lYTXYxZ3lDSFJ3YlRuU3pJZGc5TnZyWjZXUjdXa1M5WEMxc0xPeXVsUG1xOVcvMXUvS0krbjU1VW5XMW9ocDhPUlJpcDNEdzRYaUZpK2ExY0RQRDg1OGZMamV5MFU3dTNzeGFvNzNwMSsyZTFpNWVvZkZEZS9Ya2J3cnRZRVNSZmd1WlkrQUVobVFKR2RYV2lWaDhVaXQyU3UwWWNoQmdlQmhTK0E0YWYxSmNGaW1QWGRZbDljbk9nbjZYT21ZNzFiYnhWdGZ4dm9OdzJsK21oTlpLUW1XbjlVdUdhc2lkUkhIeFYydlFZejRtYm1MOHZPSWI4eWI0NW9DekpGcTlpWjJvRk05a3JzeG9DV25hbUtEakpOZU1UNFdTdXF4WXF4MFZmOUV4VGF2SzU3N2x3WkdRcS8rNkhQbFFjZlFZT01rOGxRVVJFZGdETTRub0xMdHk5ZDRYbCtTOEpSMWtEd3FYUjZnbUtxWEQ1VmtWOHg1M3hnVDgvTWh3L1BhUzhudmZDQWFtcTJKYUN0YU4xREJSeXZmU2oxaG0zYkRyMTkyOTl2QjVNTDVzNzkzTnU3ZU1uL1lOVjk1aXFPMGRmWXVOMEZIblIwZ0FXWWNxTjhZTHJoRWhPdzVFR1ovTkNZY2hiNDJIcEpmZ2x3SmlTVzBJaCtLL24ya2x4K0ZvMUlXK2xuQkI1Mm05MDhSNVk5SzlQczA2MldwMCtmUGJVaThqTXIzb3U1NWRrejBMK3M1dzJDYmhsR3hDSHI5ZDBaY3owRlQ5MWI0TnExMjZVZTNGYll6bDIzODJYWHJpKzhBTmR6cE45cmV6UWV6MjR2NkRVLzdDSUFiTmdBSHFza3NSdHFlWE1mdjJFakh1amIyMC9SWTRKc1FaSTVjOTdISHVQRFRzYUJjMUxwTXB3RTk5N1NSVFFwWFV6cDVIanBkNUVuUkpHN3lubzQ5VHB2WkpINXFlQjBVVUQ2TTNOUDd5RmZrWjlNTVVsUWxWcFpubW9SZnE0U1ZLU2tWUENycWlmaFVGTXJ5dmtXZ1ZWbGk1clIwOE1NSXozbUpwWGZ6dWNwdVFvRlY4bmJMVnd6NWlwNHl0M0NLWmxWTloydEg1Tmphc3pKeVI2am0xeGxtbWJ5MFE5ckNNVmdTV0lzWmpvUHZTeDNlVzRhaTUwSHBIRVhUbnJOSEhKTnd1S2M1OXcrMTRhTVBUa1pla29ZYXQ1cHZwLzdwZVROKzFEaHFkRE5sSFp0ZnF2cXgrSEdFMDRReHVPOHgwVUExTmJaTlI4bTR1VmVVbG5sdm83cjVHd0dDUkZGRTRUR0V5ckw1aU94TEtXSGthSzRlRUs1ZGVrQytid2Jud2orNnFvdERTZFBuVmtXOGEwYi9CK1hzbmY4UnZQT0ZmREkvQWlkSDRRTzBybXJBckJrUGx1QzBlc3JEenp1dklaWkRzaGxESU9QK1liazJ2Ty9FOCsrT2o1Mi9BVGp5bEVUM0QzUWJqbHFid3FlSlBUTm4xU1A4WXU3MXRHVi9YM3FFSVRSdG8yMC8wbnI4dnRmNjVoTHE0eW14R0ZxZmtBOGpleVRlR2dGUTZtZk8zeDExMmFSWVZmWnduRjc3czBjdlgzKzlFVWZTR3JHTEkrMUNGTEpBUWxGUmxYYUpvakhpa1JqeFJNSXdvVzc1Z1F4UVRoRVd6SGRGQUl2a1FGdzB3ZlZMZHRxeVNIRFpFdnIxam90VW9jMGUzcFBJMFg5TjRZbVQwbnZlWDlELzdPaEtWT2V0T3RRbGk3MmFjSG44cjU4OE5TRmtHT3YwcU83cnVRdHRuWk1Ma1J5MzhETkQ2MExyWW1hMm95dzVOTGtuYmNhYiswc1RVcm1wSS9WUU92b3pvalVTRWZhelNoKzVNMEgzNG9MVkZhVnBsaXp5cnFxcDdxaldycHZXVHpia0RNTWxMMnp2b2llUFlRUnR1eGRRZzE5TC9Jc3kyYVcvazU4YXUyd0ttWlh4aDYwK2FwY1BzeXFqRVk3bDk2VEpKSGVyWXBNeWJLazhLc2ErbTlZa3FhYUU2ODVNZ2pXNk5DUjJyYlROc0E1eGJPY3ROZzBkTTB2R2YwS1BTV3c2M0NvVkUwcFRhQXB2VWxsVFRnSUVkOUloM3R5OFNVY09GQnhwYmNMdnZTenlxZVdWcDhnenNjQmZOZ3haZWFEQ1RpUmx6akJjSHJsVlpJc21naWlNQ29XaTFDcHN5R3B4TUVlT3JMazRISFZzb1lheWNqcmovSHVLdW55OGJ2M25HN2lPYmNqUGpGb2JXelkzNVkxUWlITXBDRlFnU1VlT1JEZ1U4VTYvYjREbHp1N1VaTVF5UExabEg3bE5WSDM4L2NUOTkvU2xXKzZaVlNGbXdlRWhiTTlLVGlFTUd5d2VSMENqWGpVMXNvZjhGWWo5TTEyWXZ1VFdjMzNuTFhNaVdhalpGMUNJZDgvenBkRVRkaXlORVNSTVdmNG5GV2I0aW8yNkJhVzd6NC91bWoxdk9tMTUwbURReHJjbHlNSnhVMVpaQkZaVVRjNmMwUjYrb2pNMFVqaHdoMHlPaE1DR3k3OHRWWUg4a0wwd1pvYUVVQ0FUcC95cnpPNkx5cW9jOWY4ZzQ5ZVg3ejQrdEhXdGJ0YWc2TDZvdnd4MEs0VEVPYkd5UGdZMkJnVFQ3KzlwT0UySXg2T2VkaU1qeFJnYUNjL2Z2emxjUDVLWjd2RE1RS01QZnBKVkZDcmZ0T3N4Ti9pSkZsZFhtUjh0SjVONEUrZVFHSCswY1JyL2pEUFlialdOeWdvT04wUmtoemlTQXRlNlpUc0k5cEl5U1FiY1pkMWF5MlZiaGVGT05LRDMvbXU5b2hiUzkySm9SMnJMNHNibE5uc2tUS1hzaEFWMGpGdldud3F1NjRJR3pRVWlVWGhacWd5aUdpNkZrTXZJbUZRcE5Hd25oRm15R2xMYnJzM3NnM2ZCdlFuQU45aTh0ZXdvdHVpV1pvR3ROTjNWVkRKNTFkV0d5NTUwc1lnQkVKbjE3VFRLWG5qNXVrNGNIakptT0trd3NTRXdxU1NSNDRkTjU0dGpTbUJ3M1djcjEybjVMMExzMmdzWVFCbVNka09KU3RLS0x2djI1TXlnUzVjbC9xK1VCYkZVanF5blVxV1h4cnhpNGtkbTFqSVMxZXVZMmo5V1FKbnRsUEFDdEF3MXFVckMzbUpzU2IyRjJLYUgwdnB6R0krS254ZFNHd21MWXJiREJERTlYdDNpcWg4U3RheHh1MnBVS1psZGJ0TkRsYTJyN0ZvazBEU05DekhDdFZDcElWVmd4aytNY093dk9IUVdNaXZablF4S2V4UFFpNDYwSVRFUU41REZQRkVGRjJKRGxiZWtFOC9zVUFqSWxLazk1ZUVJMktRYmhJRWdKRGtMQVNFT0N3QUVEZzFHK3cveXBUN2JIblEvVDh4bklqdmJudisvY3Z1bDU1MThwQXBYZHVRY2ZHNmNVejJhZHo4MWtXQWYzTUlicHlJVzNhelp1eERZc0hqWkFRMndlUDFTVk1KMkpiVDdwRzRGdVdGOWp0cW16eGI2SG1lcVhOREYxTHBXNVl1eDROd2Z4NXNlRFdxRmtWYU9LUTdTVWRnSTBhY21kcXh4UXhPN0d3RUFmN0ZJZEE0M0RzcmplbHVqNG1GajhJSTJBUzN0eWZNcGFDL2Y2bjBZNVV2bTNjQktCbkRYclNSMklNUXg4azR0RXo1M1B1RUxpS1BGdGI0aXlPUEU4ZlpDTVRKWmFsd2pDQW5makFOdGxwekF4UnhKa0dNUHJsa0VwSkVYSGZYMXpYVGUyaU1OenYxa0NoY01vZ21JaG1OMTh0OXZDUVdwcGpHbFlXTElDMGc3N0duV1FRQ1M1cFVOZlkrdFFnMzBSME9MRkF2aFErK09wS2ZMVFFIRkFkYnBxY0pMVldDdkR3dTd3UVBYVnJjcmQrM3h3a3NEdHE2d0dJUmdMUWJyc085VDBJM1J1eW05TDBGUyt6aTJvM1JQQjVydVA2dUk4K1hrTGRkdGYyNXJtZi9MSHY3S0x0OThEN3RCVys5VG9YRDRUbW9neHZ3SHg4czB2b1hoUXIyaEtZb001TVM2U2ZFanhsRm4zejZmTERVOEJBZUh5cldOZ0ZDeE12R2xhV1VKQ1dWcEpRNWhRczNubjEzL24zSzFyR3dFWWJYL1RIK2VWdFRvUDFiWTBLWUFoY3ZqNEpjdTArcGJZbm05VnZna1lvMFBRMko4UzV6VitFZ0pwOWhNZEFyb2x5WDFsOU9OeEJJNUJXam8zcWlZbEZ4U1ovYVYvR2ptMW9xN3QzenV2aEdzMUVxUmFiT1hiVS9ycUxvMUl3aTdtZGN4NDFIL2VQT3QrZ3k3QVRVdUg3V0w1aXFSMElHbnBYTEJXUW45RTZVOFdySUMzRTlrTWZLNDA3a1ZPNWFDRlBZQTBwRVBmVkJPQ2h3MlZQMFY3OGd5V3lBNkhIL3M3TmU3a08zaVNmYUZGZWR1cUpDKzlIUWg2RG5YQVJmaFB5QjRnS2hNMG5UQk0xWlIvVkFIYTVJUnhlbXlGSm9NK3BwUC9UdzBPQUdYU2d6R1FlODM0TkJVV2JZQmRsSjBoNEozVXVxYzFDTWo1ZEJORUY1TjBTRWkvQ2cwZlczV3djRzNxZm11bEs4OEx1YkovUVdBQmE0dnpoYVM0azUwVGF4b1FIU3Jnc0NvUEtNZ2EzZVZWSEUzNUd5aS9UdUg4VGI2Vm9CZWdIS0E5bTVRK2xBd0RnWEJMNEpnL3l0bHM1VVJCMSswRFVsVU9od0dDY0E5UWlBSEhhbFRoQktmUUNFT1ZDU21pYS9vTHVwMTV1eWlFeVNmNXF1TlFIQWhWZ0NjREFLQUV4ZVE0QWZxYkdDczhOYmd3Q3J6UEFMT2svc1RuQUVuSkFJVkNqZ0NRSmhBRmpBZ1Fud1FOVDJaMEFHK1FBQ0NKUTdRQUFjR0drSnlBaFRCU2lDVFVCRldBNW80QVBhQVFOd29BYzhRQTQ0dnorZUlBd1J2SDlnSnpIbVR6REZDM0pjNC9YOUFtV0hzZXFiVHJnZXp4Q0JCSU9xdHFjcTc4M0FyQ3ROR0tvbmpBemVZNVVJLzBGeVk1blRUZHRxMlR2WFNBemhEcGdqb1NqN0JJekNFMGplbFFQdEwwQXlKVGFyZnVmWHR5NWJlR1pSSlhXQkFhVnVuU0x6Yk04WXNLZHFWV0JOVUZCNTBpT0sxRk9LRHl6SmpmK0FwTHhoTll6SmpkYnJtMVpsVGMyZTRkcGp6b3h1dWx2Zjh3SVVEQndDRWdyNjUrUWZpWU5IUUVRQ0lNS0VNaTZrMHNZNnp3L0NLRTdTTEMvS3FtN2FyaC9HYVY3V2JUL082MzdlNysyNzl4OCtmdnI4NWV1Mzd6L0FXa0pLTEpHbmZCdDFmeW1VR2ttUmkvQVRabDMzMTlLQzNNMlk1aXNJNzhmYlpudkNPS1VXZFg4bE1aMm1vWmpxUGQrMFhQZGo1WExRdHZJMUVDR040SmhFVkpONHQrcCtvZ0hVVnNqZGxYWlJqVFNTeHJGTURJblRCeG9jT1JPUjRNcEZqWE1QbXU4cjg3dnlLU1RVVit2TTR4NnVrOGdNNDBqZmd2VW1GOGVKSUxnU2xyejFCMkRoL1B4ZzJxZmkvZEkyMXYySW9QWWR3SmpnUUk1aFFjN1lxbXlPQ09VT2VKTWhzalluNGZFb1F2S1F4OWtpQ1hWR0pmck10K1BxSUNpdS9wQVVsd2gzaFJuajV1a3ExUDNvWDVSeEdYTTE5MjI0K3pYY3ArbXBxMitiSDFQbTZPbmg0NzkzemdBQUFBPT1cIikgZm9ybWF0KFwid29mZjJcIik7XG59XG5cbi53dGljb25zIHtcblx0bGluZS1oZWlnaHQ6IDE7XG59XG5cbi53dGljb25zOmJlZm9yZSB7XG5cdGZvbnQtZmFtaWx5OiB3dGljb25zICFpbXBvcnRhbnQ7XG5cdGZvbnQtc3R5bGU6IG5vcm1hbDtcblx0Zm9udC13ZWlnaHQ6IG5vcm1hbCAhaW1wb3J0YW50O1xuXHR2ZXJ0aWNhbC1hbGlnbjogdG9wO1xufVxuXG4ud3RpY29uLWFjY291bnQ6YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMDFcIjtcbn1cbi53dGljb24tYWRkOmJlZm9yZSB7XG5cdGNvbnRlbnQ6IFwiXFxmMTAyXCI7XG59XG4ud3RpY29uLWNhc3VhbDpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjEwM1wiO1xufVxuLnd0aWNvbi1jaGVjazpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjEwNFwiO1xufVxuLnd0aWNvbi1jaGVja1NtYWxsOmJlZm9yZSB7XG5cdGNvbnRlbnQ6IFwiXFxmMTA1XCI7XG59XG4ud3RpY29uLWNoZXZyb246YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMDZcIjtcbn1cbi53dGljb24tY29weTpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjEwN1wiO1xufVxuLnd0aWNvbi1jb3B5U21hbGw6YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMDhcIjtcbn1cbi53dGljb24tZGlzbWlzczpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjEwOVwiO1xufVxuLnd0aWNvbi1lcnJvcjpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjEwYVwiO1xufVxuLnd0aWNvbi1leHBhbmQ6YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMGJcIjtcbn1cbi53dGljb24tZmVlZGJhY2s6YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMGNcIjtcbn1cbi53dGljb24tZmluZDpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjEwZFwiO1xufVxuLnd0aWNvbi1mb3JtYWw6YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMGVcIjtcbn1cbi53dGljb24tZ3JheUxvZ286YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMGZcIjtcbn1cbi53dGljb24taWdub3JlOmJlZm9yZSB7XG5cdGNvbnRlbnQ6IFwiXFxmMTEwXCI7XG59XG4ud3RpY29uLWluZm86YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMTFcIjtcbn1cbi53dGljb24tbGVmdENoZXZyb246YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMTJcIjtcbn1cbi53dGljb24tbG9nbzpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjExM1wiO1xufVxuLnd0aWNvbi1sb3ZlOmJlZm9yZSB7XG5cdGNvbnRlbnQ6IFwiXFxmMTE0XCI7XG59XG4ud3RpY29uLXBhc3RlOmJlZm9yZSB7XG5cdGNvbnRlbnQ6IFwiXFxmMTE1XCI7XG59XG4ud3RpY29uLXBpbjpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjExNlwiO1xufVxuLnd0aWNvbi1wcmVtaXVtOmJlZm9yZSB7XG5cdGNvbnRlbnQ6IFwiXFxmMTE3XCI7XG59XG4ud3RpY29uLXByZW1pdW1EZXRhaWw6YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMThcIjtcbn1cbi53dGljb24tcHJlbWl1bUZ1bGw6YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMTlcIjtcbn1cbi53dGljb24tcmVmaW5lOmJlZm9yZSB7XG5cdGNvbnRlbnQ6IFwiXFxmMTFhXCI7XG59XG4ud3RpY29uLXJld3JpdGU6YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMWJcIjtcbn1cbi53dGljb24tcmlnaHRDaGV2cm9uOmJlZm9yZSB7XG5cdGNvbnRlbnQ6IFwiXFxmMTFjXCI7XG59XG4ud3RpY29uLXJvY2tldDpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjExZFwiO1xufVxuLnd0aWNvbi1zZW50ZW5jZUV4YW1wbGVzOmJlZm9yZSB7XG5cdGNvbnRlbnQ6IFwiXFxmMTFlXCI7XG59XG4ud3RpY29uLXNob3J0ZW46YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMWZcIjtcbn1cbi53dGljb24tdW5sb2NrOmJlZm9yZSB7XG5cdGNvbnRlbnQ6IFwiXFxmMTIwXCI7XG59XG4ud3RpY29uLXdhcm46YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMjFcIjtcbn1cbi53dGljb24tV29yZHR1bmVCdXR0b246YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMjJcIjtcbn1cbi53dGljb24teDpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjEyM1wiO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */
-    </style>
-</head>
+    </style> -->
 
-<body id="media" class="admin-bar page simple-page" data-new-gr-c-s-check-loaded="14.1008.0" data-gr-ext-installed="">
+    <!-- <link rel="alternate" type="application/rss+xml" title="Omeka RSS Feed"
+        href="https://apollo15hub.org/items/browse?output=rss2">
+    <link rel="alternate" type="application/atom+xml" title="Omeka Atom Feed"
+        href="https://apollo15hub.org/items/browse?output=atom"> -->
+
+    <!-- from Saved Version -->
+    <!-- DO NOT COPY TO OMEKA -->
+    <link
+      href="./Apollo 15 Media · The Apollo 15 Learning Hub_files/mediaelementplayer-legacy.min.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./Apollo 15 Media · The Apollo 15 Learning Hub_files/html5media.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./Apollo 15 Media · The Apollo 15 Learning Hub_files/css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./Apollo 15 Media · The Apollo 15 Learning Hub_files/admin-bar.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./Apollo 15 Media · The Apollo 15 Learning Hub_files/normalize.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./Apollo 15 Media · The Apollo 15 Learning Hub_files/jquery.mmenu.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./Apollo 15 Media · The Apollo 15 Learning Hub_files/jquery.mmenu.positioning.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./Apollo 15 Media · The Apollo 15 Learning Hub_files/style.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./Apollo 15 Media · The Apollo 15 Learning Hub_files/css(1)"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- END OF DO NOT COPY TO OMEKA -->
+  </head>
+
+  <body
+    id="media"
+    class="admin-bar page simple-page"
+    data-new-gr-c-s-check-loaded="14.1008.0"
+    data-gr-ext-installed=""
+  >
     <nav id="top-nav" class="mm-menu mm-offcanvas mm-right">
-        <div class="mm-panels">
-            <div class="mm-panel mm-hasnavbar mm-opened mm-current" id="mm-0">
-                <div class="mm-navbar"><a class="mm-title">Menu</a></div>
-                <ul class="navigation mm-listview">
-                    <li>
-                        <a href="https://apollo15hub.org/">Flight Path</a>
-                    </li>
-                    <li>
-                        <a href="https://apollo15hub.org/readux">Data Files - Readux</a>
-                    </li>
-                    <li>
-                        <a href="https://apollo15hub.org/items/browse">Exhibition - Media</a>
-                    </li>
-                    <li>
-                        <a href="https://apollo15hub.org/lunarmodule">Inside the Ship - 3D LM</a>
-                    </li>
-                    <li>
-                        <a href="https://apollo15hub.org/about">About</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="mm-panels">
+        <div class="mm-panel mm-hasnavbar mm-opened mm-current" id="mm-0">
+          <div class="mm-navbar"><a class="mm-title">Menu</a></div>
+          <ul class="navigation mm-listview">
+            <li>
+              <a href="https://apollo15hub.org/">Flight Path</a>
+            </li>
+            <li>
+              <a href="https://apollo15hub.org/readux">Data Files - Readux</a>
+            </li>
+            <li>
+              <a href="https://apollo15hub.org/items/browse"
+                >Exhibition - Media</a
+              >
+            </li>
+            <li>
+              <a href="https://apollo15hub.org/lunarmodule"
+                >Inside the Ship - 3D LM</a
+              >
+            </li>
+            <li>
+              <a href="https://apollo15hub.org/about">About</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <div id="wrap" class="mm-page mm-slideout">
-        <nav id="admin-bar">
+      <nav id="admin-bar">
+        <ul class="navigation">
+          <li>
+            <a href="https://apollo15hub.org/admin/users/edit/9"
+              >Welcome, Yang</a
+            >
+          </li>
+          <li>
+            <a href="https://apollo15hub.org/admin/">Omeka Admin</a>
+          </li>
+          <li>
+            <a href="https://apollo15hub.org/users/logout">Log Out</a>
+          </li>
+        </ul>
+      </nav>
 
-            <ul class="navigation">
-                <li>
-                    <a href="https://apollo15hub.org/admin/users/edit/9">Welcome, Yang</a>
-                </li>
-                <li>
-                    <a href="https://apollo15hub.org/admin/">Omeka Admin</a>
-                </li>
-                <li>
-                    <a href="https://apollo15hub.org/users/logout">Log Out</a>
-                </li>
-            </ul>
-        </nav>
+      <header role="banner" class="">
+        <div id="site-title">
+          <a href="https://apollo15hub.org/">The Apollo 15 Learning Hub</a>
+        </div>
 
-        <header role="banner" class="">
+        <a
+          href="https://apollo15hub.org/media#"
+          class="search-toggle"
+          aria-label="Search"
+        ></a>
+        <div id="search-container">
+          <form
+            id="search-form"
+            name="search-form"
+            role="search"
+            class="closed"
+            action="https://apollo15hub.org/search"
+            method="get"
+          >
+            <input
+              type="text"
+              name="query"
+              id="query"
+              value=""
+              title="Search"
+            />
+            <input
+              type="hidden"
+              name="query_type"
+              value="keyword"
+              id="query_type"
+            />
+            <input
+              type="hidden"
+              name="record_types[]"
+              value="Item"
+              id="record_types"
+            />
+            <input
+              type="hidden"
+              name="record_types[]"
+              value="File"
+              id="record_types"
+            />
+            <input
+              type="hidden"
+              name="record_types[]"
+              value="Collection"
+              id="record_types"
+            />
+            <input
+              type="hidden"
+              name="record_types[]"
+              value="Exhibit"
+              id="record_types"
+            />
+            <input
+              type="hidden"
+              name="record_types[]"
+              value="ExhibitPage"
+              id="record_types"
+            />
+            <input
+              type="hidden"
+              name="record_types[]"
+              value="SimplePagesPage"
+              id="record_types"
+            />
+            <button
+              name="submit_search"
+              id="submit_search"
+              type="submit"
+              value="Search"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+        <!-- end search -->
 
+        <a
+          href="https://apollo15hub.org/media#top-nav"
+          class="menu-toggle"
+          aria-label="Menu"
+        ></a>
+      </header>
 
+      <article id="content">
+        <div id="primary">
+          <p id="simple-pages-breadcrumbs">
+            <a href="https://apollo15hub.org/">Home</a> &gt; Apollo 15 Media
+          </p>
+          <div class="uk-container uk-text-center">
+            <h1 class="ap-h1">Apollo 15 Media</h1>
 
-            <div id="site-title"><a href="https://apollo15hub.org/">The Apollo 15 Learning Hub</a>
+            <h2 class="ap-category-caption">Search for Media by Collection</h2>
+
+            <div
+              class="
+                uk-child-width-1-4@m uk-child-width-1-2@s uk-child-width-1-1@xs
+                grid-collapse
+                uk-margin-large-bottom
+              "
+              uk-grid
+            >
+              <div>
+                <a
+                  href="https://apollo15hub.org/collections/show/5"
+                  class="ap-home-card ap-z-index"
+                >
+                  <div class="uk-inline a15-card">
+                    <img src="discovery.jpg" alt="" />
+                    <div
+                      class="
+                        uk-overlay uk-overlay-default uk-position-bottom
+                        a15-overlay
+                      "
+                    >
+                      <p class="ap-category-label">Training for the Mission</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://apollo15hub.org/collections/show/3"
+                  class="ap-home-card ap-z-index"
+                >
+                  <div class="uk-inline a15-card">
+                    <img src="discovery.jpg" alt="" />
+                    <div
+                      class="
+                        uk-overlay uk-overlay-default uk-position-bottom
+                        a15-overlay
+                      "
+                    >
+                      <p class="ap-category-label">
+                        Discovery: Geological and Scientific Research
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://apollo15hub.org/collections/show/2"
+                  class="ap-home-card ap-z-index"
+                >
+                  <div class="uk-inline a15-card">
+                    <img src="exploration.jpg" alt="" />
+                    <div
+                      class="
+                        uk-overlay uk-overlay-default uk-position-bottom
+                        a15-overlay
+                      "
+                    >
+                      <p class="ap-category-label">
+                        Exploration during the Mission
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://apollo15hub.org/collections/show/1"
+                  class="ap-home-card ap-z-index"
+                >
+                  <div class="uk-inline a15-card">
+                    <img src="innovation.jpg" alt="" />
+                    <div
+                      class="
+                        uk-overlay uk-overlay-default uk-position-bottom
+                        a15-overlay
+                      "
+                    >
+                      <p class="ap-category-label">
+                        Innovation: Technological Achievements
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
 
-            <a href="https://apollo15hub.org/media#" class="search-toggle" aria-label="Search"></a>
-            <div id="search-container">
-                <form id="search-form" name="search-form" role="search" class="closed"
-                    action="https://apollo15hub.org/search" method="get"> <input type="text" name="query" id="query"
-                        value="" title="Search"> <input type="hidden" name="query_type" value="keyword" id="query_type">
-                    <input type="hidden" name="record_types[]" value="Item" id="record_types"> <input type="hidden"
-                        name="record_types[]" value="File" id="record_types"> <input type="hidden" name="record_types[]"
-                        value="Collection" id="record_types"> <input type="hidden" name="record_types[]" value="Exhibit"
-                        id="record_types"> <input type="hidden" name="record_types[]" value="ExhibitPage"
-                        id="record_types"> <input type="hidden" name="record_types[]" value="SimplePagesPage"
-                        id="record_types"> <button name="submit_search" id="submit_search" type="submit"
-                        value="Search">Search</button>
-                </form>
-            </div><!-- end search -->
+            <h2 class="ap-category-caption">Search by Media Type</h2>
 
-            <a href="https://apollo15hub.org/media#top-nav" class="menu-toggle" aria-label="Menu"></a>
-
-            <!-- UIkit CSS -->
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/css/uikit.min.css" />
-
-            <!-- UIkit JS -->
-            <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit-icons.min.js"></script>
-
-            <style>
-                .ap-category-box {
-                    padding: 0.5rem 2rem;
-                    text-align: left;
-                    font-size: 1rem;
-                    opacity: 0.75 !important;
-                    font-weight: bold;
-                }
-
-                .ap-category-box:hover {
-                    background: #dfdfdf;
-                }
-
-                .ap-category-box:hover .ap-category-label {
-                    transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
-                }
-
-                .ap-category-label {
-                    /* word-spacing: 100vw; */
-                    color: black;
-                }
-
-                .ap-category-icon {
-                    color: grey;
-                }
-
-                .ap-category-caption {
-                    color: white;
-                }
-
-                .ap-category-span-inline {
-                    display: inline-block;
-                    background: white;
-                    color: black;
-                    padding: 0.25rem 0.75rem;
-                    opacity: 0.85;
-                }
-
-                .ap-category-caption {
-                    font-size: 1.25rem;
-                }
-
-                .ap-h1 {
-                    color: white;
-                }
-            </style>
-        </header>
-
-
-        <article id="content">
-
-            <div id="primary">
-                <p id="simple-pages-breadcrumbs"><a href="https://apollo15hub.org/">Home</a> &gt; Apollo 15 Media</p>
-
-
-                <div class="uk-container uk-text-center">
-                    <h1 class="ap-h1">Apollo 15 Media</h1>
-
-
-
-
-                    <h2 class="ap-category-caption">Search for Media by Collection</h2>
-
-
-                    <div class="uk-child-width-1-4@m  uk-child-width-1-2@s uk-child-width-1-1@xs grid-collapse uk-margin-large-bottom" uk-grid>
-                        <div><a href="https://apollo15hub.org/collections/show/5" class="ap-home-card ap-z-index">
-                                <div class="uk-inline a15-card ">
-                                    <img src="discovery.jpg" alt="">
-                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
-                                        <p class="ap-category-label">Training for the Mission</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://apollo15hub.org/collections/show/3" class="ap-home-card ap-z-index">
-                                <div class="uk-inline a15-card">
-                                    <img src="discovery.jpg" alt="">
-                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
-                                        <p class="ap-category-label">Discovery:
-                                            Geological and Scientific Research</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://apollo15hub.org/collections/show/2" class="ap-home-card ap-z-index">
-                                <div class="uk-inline a15-card">
-                                    <img src="exploration.jpg" alt="">
-                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
-                                        <p class="ap-category-label">Exploration
-                                            during the Mission</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://apollo15hub.org/collections/show/1" class="ap-home-card ap-z-index">
-                                <div class="uk-inline a15-card">
-                                    <img src="innovation.jpg" alt="">
-                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
-                                        <p class="ap-category-label">Innovation:
-                                            Technological Achievements</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+            <div
+              class="
+                uk-child-width-1-8@m uk-child-width-1-3@s uk-child-width-1-2@xs
+                grid-collapse
+                uk-margin-large-bottom
+              "
+              uk-grid
+            >
+              <div>
+                <a
+                  href="https://apollo15hub.org/collections/show/5"
+                  class="ap-home-card ap-z-index"
+                >
+                  <div class="uk-inline a15-card">
+                    <div
+                      uk-icon="icon: video-camera; ratio: 8;"
+                      class="ap-category-icon"
+                    ></div>
+                    <div
+                      class="
+                        uk-overlay uk-overlay-default uk-position-bottom
+                        a15-overlay
+                      "
+                    >
+                      <p class="ap-category-label">Videos</p>
                     </div>
-
-                    <h2 class="ap-category-caption">Search by Media Type</h2>
-
-                    <div class="uk-child-width-1-8@m uk-child-width-1-3@s uk-child-width-1-2@xs grid-collapse uk-margin-large-bottom" uk-grid>
-                        <div><a href="https://apollo15hub.org/collections/show/5" class="ap-home-card ap-z-index">
-                                <div class="uk-inline a15-card ">
-                                    <div uk-icon="icon: video-camera; ratio: 8;" class="ap-category-icon"></div>
-                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
-                                        <p class="ap-category-label">Videos</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://apollo15hub.org/collections/show/3" class="ap-home-card ap-z-index">
-                                <div class="uk-inline a15-card">
-                                    <div uk-icon="icon: image; ratio: 8;" class="ap-category-icon"></div>
-                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
-                                        <p class="ap-category-label">Images</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://apollo15hub.org/collections/show/2" class="ap-home-card ap-z-index">
-                                <div class="uk-inline a15-card">
-                                    <div uk-icon="icon: pencil; ratio: 8;" class="ap-category-icon"></div>
-                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
-                                        <p class="ap-category-label">Articles</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://apollo15hub.org/collections/show/1" class="ap-home-card ap-z-index">
-                                <div class="uk-inline a15-card">
-                                    <div uk-icon="icon: server; ratio: 8;" class="ap-category-icon"></div>
-                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
-                                        <p class="ap-category-label">External Websites</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://apollo15hub.org/collections/show/1" class="ap-home-card ap-z-index">
-                                <div class="uk-inline a15-card">
-                                    <div uk-icon="icon: file-text; ratio: 8;" class="ap-category-icon"></div>
-
-                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
-                                        <p class="ap-category-label">Text Documents</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://apollo15hub.org/collections/show/3"
+                  class="ap-home-card ap-z-index"
+                >
+                  <div class="uk-inline a15-card">
+                    <div
+                      uk-icon="icon: image; ratio: 8;"
+                      class="ap-category-icon"
+                    ></div>
+                    <div
+                      class="
+                        uk-overlay uk-overlay-default uk-position-bottom
+                        a15-overlay
+                      "
+                    >
+                      <p class="ap-category-label">Images</p>
                     </div>
-
-
-                    <h2 class="ap-category-caption">Search by Source Type</h2>
-                    <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-child-width-1-1@xs grid-collapse uk-margin-large-bottom" uk-grid>
-                        <div><a href="https://apollo15hub.org/items/browse?search=&amp;advanced%5B0%5D%5Bjoiner%5D=and&amp;advanced%5B0%5D%5Belement_id%5D=43&amp;advanced%5B0%5D%5Btype%5D=contains&amp;advanced%5B0%5D%5Bterms%5D=Original&amp;range=&amp;collection=&amp;type=&amp;user=&amp;tags=&amp;public=&amp;featured=&amp;exhibit=&amp;submit_search=Search+for+items"
-                                class="ap-home-card ap-z-index">
-                                <div class="uk-inline a15-card ">
-                                    <img src="primary.jpg" alt="">
-                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
-                                        <p class="ap-category-label">Primary Source</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://apollo15hub.org/items/browse?search=&amp;advanced%5B0%5D%5Bjoiner%5D=and&amp;advanced%5B0%5D%5Belement_id%5D=43&amp;advanced%5B0%5D%5Btype%5D=contains&amp;advanced%5B0%5D%5Bterms%5D=Revised&amp;range=&amp;collection=&amp;type=&amp;user=&amp;tags=&amp;public=&amp;featured=&amp;exhibit=&amp;submit_search=Search+for+items"
-                                class="ap-home-card ap-z-index">
-                                <div class="uk-inline a15-card">
-                                    <img src="revised.jpg" alt="">
-                                    <div class="uk-overlay uk-overlay-default uk-position-bottom a15-overlay">
-                                        <p class="ap-category-label">Source Revised from Primary Source</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://apollo15hub.org/collections/show/2"
+                  class="ap-home-card ap-z-index"
+                >
+                  <div class="uk-inline a15-card">
+                    <div
+                      uk-icon="icon: pencil; ratio: 8;"
+                      class="ap-category-icon"
+                    ></div>
+                    <div
+                      class="
+                        uk-overlay uk-overlay-default uk-position-bottom
+                        a15-overlay
+                      "
+                    >
+                      <p class="ap-category-label">Articles</p>
                     </div>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://apollo15hub.org/collections/show/1"
+                  class="ap-home-card ap-z-index"
+                >
+                  <div class="uk-inline a15-card">
+                    <div
+                      uk-icon="icon: server; ratio: 8;"
+                      class="ap-category-icon"
+                    ></div>
+                    <div
+                      class="
+                        uk-overlay uk-overlay-default uk-position-bottom
+                        a15-overlay
+                      "
+                    >
+                      <p class="ap-category-label">External Websites</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://apollo15hub.org/collections/show/1"
+                  class="ap-home-card ap-z-index"
+                >
+                  <div class="uk-inline a15-card">
+                    <div
+                      uk-icon="icon: file-text; ratio: 8;"
+                      class="ap-category-icon"
+                    ></div>
 
-
-                    <h2 class="ap-category-caption uk-margin-large-bottom">Search by
-                        <a href="https://apollo15hub.org/items/tags" title="Source Revised from Primary Source">
-                            <span class="ap-category-span-inline">Topic</span>
-                        </a>
-                    </h2>
-
-                    <h2 class="ap-category-caption uk-margin-large-bottom">Browse
-                        <a href="https://apollo15hub.org/items/browse" title="Source Revised from Primary Source">
-                            <span class="ap-category-span-inline">All</span>
-                        </a>
-                    </h2>
-
-
-
-                </div>
-
+                    <div
+                      class="
+                        uk-overlay uk-overlay-default uk-position-bottom
+                        a15-overlay
+                      "
+                    >
+                      <p class="ap-category-label">Text Documents</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
 
-        </article>
-
-        <footer role="contentinfo">
-
-            <div id="footer-text">
-                <p>Proudly powered by <a href="http://omeka.org/">Omeka</a>.</p>
+            <h2 class="ap-category-caption">Search by Source Type</h2>
+            <div
+              class="
+                uk-child-width-1-4@m uk-child-width-1-2@s uk-child-width-1-1@xs
+                grid-collapse
+                uk-margin-large-bottom
+              "
+              uk-grid
+            >
+              <div>
+                <a
+                  href="https://apollo15hub.org/items/browse?search=&amp;advanced%5B0%5D%5Bjoiner%5D=and&amp;advanced%5B0%5D%5Belement_id%5D=43&amp;advanced%5B0%5D%5Btype%5D=contains&amp;advanced%5B0%5D%5Bterms%5D=Original&amp;range=&amp;collection=&amp;type=&amp;user=&amp;tags=&amp;public=&amp;featured=&amp;exhibit=&amp;submit_search=Search+for+items"
+                  class="ap-home-card ap-z-index"
+                >
+                  <div class="uk-inline a15-card">
+                    <img src="primary.jpg" alt="" />
+                    <div
+                      class="
+                        uk-overlay uk-overlay-default uk-position-bottom
+                        a15-overlay
+                      "
+                    >
+                      <p class="ap-category-label">Primary Source</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://apollo15hub.org/items/browse?search=&amp;advanced%5B0%5D%5Bjoiner%5D=and&amp;advanced%5B0%5D%5Belement_id%5D=43&amp;advanced%5B0%5D%5Btype%5D=contains&amp;advanced%5B0%5D%5Bterms%5D=Revised&amp;range=&amp;collection=&amp;type=&amp;user=&amp;tags=&amp;public=&amp;featured=&amp;exhibit=&amp;submit_search=Search+for+items"
+                  class="ap-home-card ap-z-index"
+                >
+                  <div class="uk-inline a15-card">
+                    <img src="revised.jpg" alt="" />
+                    <div
+                      class="
+                        uk-overlay uk-overlay-default uk-position-bottom
+                        a15-overlay
+                      "
+                    >
+                      <p class="ap-category-label">
+                        Source Revised from Primary Source
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
 
+            <h2 class="ap-category-caption uk-margin-large-bottom">
+              Search by
+              <a
+                href="https://apollo15hub.org/items/tags"
+                title="Source Revised from Primary Source"
+              >
+                <span class="ap-category-span-inline">Topic</span>
+              </a>
+            </h2>
 
-        </footer>
+            <h2 class="ap-category-caption uk-margin-large-bottom">
+              Browse
+              <a
+                href="https://apollo15hub.org/items/browse"
+                title="Source Revised from Primary Source"
+              >
+                <span class="ap-category-span-inline">All</span>
+              </a>
+            </h2>
+          </div>
+        </div>
+      </article>
 
-    </div><!-- end wrap -->
-
+      <footer role="contentinfo">
+        <div id="footer-text">
+          <p>Proudly powered by <a href="http://omeka.org/">Omeka</a>.</p>
+        </div>
+      </footer>
+    </div>
+    <!-- end wrap -->
 
     <div id="mm-blocker" class="mm-slideout"></div>
-    <!---->
     <div class="crt-wrapper"></div>
     <div class="aadvantage-wrapper"></div>
-</body>
-<div class="aadvantage-caa-wrapper"></div>
-
+  </body>
+  <div class="aadvantage-caa-wrapper"></div>
 </html>
