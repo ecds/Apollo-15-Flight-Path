@@ -1,23 +1,37 @@
 {
-  "name": "apollo-15-flight-path",
-  "version": "0.0.1",
-  "description": "Page telling the story of the Apollo 15 mission. Build system adapted from a simple example project that uses the SASS files of the U.S. Web Design System.",
+  "name": "js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "gulp watch",
-    "build": "gulp",
-    "federalist": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-  "author": "Jay Varner <jay.varner@emory.edu>. Credit to Atul Varma <atul.varma@gsa.gov> for original example",
-  "license": "CC0-1.0",
   "dependencies": {
-    "express": ">=4.15.4",
-    "gulp": "=3.9.1",
-    "gulp-sass": ">=3.1.0",
-    "gulp-sourcemaps": ">=2.6.0",
-    "gulp-util": ">=3.0.8"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "@eslint/js": "^9.8.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "globals": "^15.9.0",
+    "postcss": "^8.4.41",
+    "prettier": "^3.3.3",
+    "scrollama": "^3.2.0",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.0",
+    "vite": "^5.4.0"
   }
 }

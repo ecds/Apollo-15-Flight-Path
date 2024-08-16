@@ -1,42 +1,27 @@
-## Requirements
+# Apollo 15 Flight Path
 
-You'll need [Node.js][] version 6 or above. That's it!
+Home page for the [Apollo 15 Learning Hub](https://apollo15hub.org/).
 
-## Quick start
+## Build
 
-Run the following at the terminal to get started:
+Current build assume Node 20. Use [NVM](https://github.com/nvm-sh/nvm) to manage local node versions.
 
-```
+From the project root, run:
+
+~~~bash
+nvm use 20
 npm install
-npm start
-```
+npm run build
+~~~
 
-At this point, you should be able to visit `http://localhost:8000` in
-your browser and see the example page.
+Copy the contents of the resulting `/dist` folder to the webserver. For the Omeka site, copy the index.html from the build to index.php and wrap it in PHP tags.
 
-You can modify the page's HTML at `index.html`, or you can
-edit its SASS at `sass/main.scss`.
+## Development
 
-Whenever you make changes to the SASS, it will automatically be
-compiled to CSS, and you can reload the page in your web browser to
-see the changes.
+~~~bash
+nvm use 20
+npm install
+npm run dev
+~~~
 
-## Building the site
-
-Run `npm run-script build` to generate the site's CSS.
-
-## Deploying the site
-
-You can deploy the site by copying all the files from the
-root directory of the project to a static web server. You'll probably
-want to exclude the `.git` and `node_modules` directories, though.
-
-## Environment variables
-
-* `PORT` defines the port for the development static file server to
-  listen on. It defaults to `8000`.
-
-
-## Based on
-
-The structure and build set is directly based on [uswds](https://github.com/uswds/uswds/).
+View the site at [http://localhost:5173](http://localhost:5173)
