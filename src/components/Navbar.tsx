@@ -7,7 +7,7 @@ const Navbar = () => {
       to: "https://film.apollo15hub.org/",
       key: "bdfe4bf3",
     },
-    { label: "Flight Path", to: "#", key: "9a842ec4" },
+    { label: "Flight Path", to: "#flight-path", key: "9a842ec4" },
     {
       label: "Data File",
       to: "https://readux.ecds.emory.edu/collections/emory-control:LSDI-Apollo15/",

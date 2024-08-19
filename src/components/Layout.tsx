@@ -4,13 +4,26 @@ interface Element {
   children: ReactNode;
 }
 
-export const Paragraph = ({ children }: Element) => {
-  return <p className="tracking-wide m-4 text-xl font-light">{children}</p>;
+export const Paragraph = ({
+  children,
+  className,
+}: Element & { className?: string }) => {
+  return (
+    <p className={`tracking-wide p-4 md:p-6 text-xl font-light ${className}`}>
+      {children}
+    </p>
+  );
 };
 
-export const StickyHeader = ({ children }: Element) => {
+export const StickyHeader = ({
+  children,
+  offset,
+}: Element & { offset: number }) => {
   return (
-    <h4 className="sticky bg-black top-0 text-3xl p-4 tracking-wider font-bold z-10">
+    <h4
+      className="sticky bg-black text-3xl p-4 md:p-6 tracking-wider font-bold z-10"
+      style={{ top: `${offset}px` }}
+    >
       {children}
     </h4>
   );
@@ -35,7 +48,7 @@ export const FigCaption = ({
 }) => {
   return (
     <figcaption
-      className={`flex flex-row flex-grow justify-between p-4 ${className}`}
+      className={`flex flex-row flex-grow justify-between p-4 md:p-6 ${className}`}
     >
       <div
         className="text-2xl tracking-wider"
@@ -97,7 +110,7 @@ export const Image = ({
       <img
         src={source}
         alt={alt ?? ""}
-        className="h-auto max-w-full p-4 mx-auto"
+        className="h-auto max-w-full p-4 md:p-6 mx-auto"
         title={title}
       />
       <span className="sr-only">{title}</span>
@@ -142,6 +155,26 @@ export const Link = ({
       target={newTab ? "_blank" : "_self"}
     >
       {text ?? link}
+      {newTab && (
+        <span className="inline">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="inline ml-1 mb-1"
+            height={24}
+            width={24}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+            />
+          </svg>
+        </span>
+      )}
     </a>
   );
 };

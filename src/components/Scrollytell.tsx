@@ -1,22 +1,24 @@
 import { useEffect, useRef, useState } from "react";
 import scrollama from "scrollama";
 import FlightPath from "./FlightPath";
-import { segments } from "./Segments";
+import { sections } from "./Article";
 import { useResizeObserver } from "../hooks";
 import type { ScrollamaInstance } from "scrollama";
-// import { Link } from "./Layout";
+import { Link, StickyHeader } from "./Layout";
 
 const Scrollytell = () => {
   const scrollerRef = useRef<ScrollamaInstance | undefined>(undefined);
   const [scrollProgress, setScrollProgress] = useState<number>(0.0);
   const [setupFailed, setSetupFailed] = useState<boolean>(false);
   const [shouldRetry, setShouldRetry] = useState<boolean>(false);
+  const [topOffset, setTopOffset] = useState<number>(76);
   const { documentSize } = useResizeObserver();
   const steps = useRef<HTMLDivElement>(null);
+  const stickyNavRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     if (
-      steps?.current?.children.length !== segments.length ||
+      steps?.current?.children.length !== sections.length ||
       scrollerRef.current
     )
       return;
@@ -40,7 +42,7 @@ const Scrollytell = () => {
       scrollerRef.current?.destroy();
       scrollerRef.current = undefined;
     };
-  }, [parent, steps, segments, shouldRetry]);
+  }, [parent, steps, sections, shouldRetry]);
 
   useEffect(() => {
     // Mostly a bug when navigating from error page.
@@ -48,6 +50,9 @@ const Scrollytell = () => {
   }, [setupFailed]);
 
   useEffect(() => {
+    if (stickyNavRef.current) {
+      setTopOffset(stickyNavRef.current.clientHeight);
+    }
     try {
       scrollerRef.current?.resize();
     } catch (error) {
@@ -56,52 +61,64 @@ const Scrollytell = () => {
   }, [documentSize]);
 
   return (
-    <section className="flex flex-col md:flex-row justify-between">
+    <main
+      className="flex flex-col md:flex-row justify-between"
+      id="flight-path"
+    >
       <FlightPath
-        className="sticky p-8 md:p-0 top-0 h-screen mt-16 mr-6 bias-full w-full md:bias-1/2 md:w-1/2 order-last pointer-events-none"
+        className="sticky p-8 md:p-0 top-0 h-screen mt-16 bias-full w-full md:bias-1/2 md:w-1/2 order-last pointer-events-none"
         scrollProgress={scrollProgress}
       />
       <article
         className="bias-full w-full md:bias-1/2 md:w-1/2 relative bg-black/60 px-4 md:px-10"
         id="flight-path"
       >
-        {/* <nav className="flex flex-row sticky top-0 justify-between bg-black z-10 py-6 px-2">
+        <nav
+          ref={stickyNavRef}
+          className="flex flex-row sticky top-0 justify-between bg-black z-10 pt-4 px-2"
+        >
           <Link
-            link="#"
+            link="#flight-path"
             text="Flight Path"
             newTab={false}
             className="no-underline hover:underline text-xl px-4 font-bold text-yellow-500 hover:text-yellow-700"
           />
           <Link
-            link="#"
+            link="https://readux.io/collection/apollo-15/"
             text="Data File"
             newTab={false}
             className="no-underline hover:underline text-xl px-4 font-bold text-yellow-500 hover:text-yellow-700"
           />
           <Link
-            link="#"
+            link="https://apollo15hub.org/exhibit-media"
             text="Explore the Mission"
             newTab={false}
             className="no-underline hover:underline text-xl px-4 font-bold text-yellow-500 hover:text-yellow-700"
           />
           <Link
-            link="#"
+            link="/"
             text="Apollo 15"
             newTab={false}
             className="no-underline hover:underline text-xl px-4 font-bold text-yellow-500 hover:text-yellow-700"
           />
-        </nav> */}
+        </nav>
         <div ref={steps}>
-          {segments.map((segment) => {
+          {sections.map((section) => {
             return (
-              <div className="step text-xl content-center relative">
-                {segment}
+              <div
+                className="step text-xl content-center relative"
+                key={section.key}
+              >
+                <StickyHeader offset={topOffset}>
+                  {section.heading}
+                </StickyHeader>
+                {section.content}
               </div>
             );
           })}
         </div>
       </article>
-    </section>
+    </main>
   );
 };
 
