@@ -14,7 +14,12 @@ export const sections = [
     key: "f493021e",
     content: (
       <div>
-        <a href="/spanish-version">Lea in español</a>
+        <a
+          className="block border bg-yellow-300 hover:bg-yellow-100 text-black text-sm tracking-wider font-bold fill-yellow-100 hover:fill-yellow-300 border-yellow-100 hover:border-yellow-300 ml-6 mt-6 rounded-md w-fit p-2"
+          href="/spanish-version"
+        >
+          Lea in español
+        </a>
         <Paragraph>
           The Apollo 15 Learning Hub is a project in the Emory Center for
           Digital Scholarship that has as its mission to assemble, preserve, and
