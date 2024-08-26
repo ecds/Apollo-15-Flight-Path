@@ -6,7 +6,7 @@ import Scrollytell from "./components/Scrollytell";
 
 function App() {
   return (
-    <div className="w-screen bg-gradient-to-b from-black to-gray-800 text-white font-sans">
+    <div className="w-screen bg-gradient-to-b from-black to-gray-800 text-white font-sans overflow-x-hidden">
       <Background />
       <Navbar />
       <Header />

@@ -14,7 +14,12 @@ npm install
 npm run build
 ~~~
 
-Copy the contents of the resulting `/dist` folder to the webserver. For the Omeka site, copy the index.html from the build to index.php and wrap it in PHP tags.
+Copy the contents of the resulting `/dist` folder to the webserver. For the Omeka site, copy the index.html from the build to index.php and wrap it in PHP tags. Prepend all the links in all the JavaScript, HTML, and CSS files in the build
+
+~~~bash
+/themes/bigpicture/assets
+/themes/bigpicture/images
+~~~
 
 ## Development
 
