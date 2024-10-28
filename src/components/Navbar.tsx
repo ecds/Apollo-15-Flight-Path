@@ -10,12 +10,12 @@ const Navbar = () => {
     { label: "Flight Path", to: "#flight-path", key: "9a842ec4" },
     {
       label: "Data File",
-      to: "https://readux.ecds.emory.edu/collections/emory-control:LSDI-Apollo15/",
+      to: "https://readux.io/collection/apollo-15/",
       key: "f1b7619f",
     },
     {
-      label: "Exhibition",
-      to: "https://apollo15hub.org/items/browse",
+      label: "Explore the Mission",
+      to: "https://apollo15hub.org/exhibit-media",
       key: "2f65795f",
     },
     {
