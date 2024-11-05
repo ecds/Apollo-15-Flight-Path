@@ -924,10 +924,10 @@ export const sections = [
         <Paragraph>
           <a href="https://ecds.emory.edu/">
             <picture>
-              <source srcSet="/images/EU_ECtrDigitalScholarship_hz_rv.webp" />
-              <source srcSet="/images/EU_ECtrDigitalScholarship_hz_rv.png" />
+              <source srcSet="/themes/bigpicture/images/EU_ECtrDigitalScholarship_hz_rv.webp" />
+              <source srcSet="/themes/bigpicture/images/EU_ECtrDigitalScholarship_hz_rv.png" />
               <img
-                src="/images/EU_ECtrDigitalScholarship_hz_rv.png"
+                src="/themes/bigpicture/images/EU_ECtrDigitalScholarship_hz_rv.png"
                 alt=""
                 className="h-auto max-w-full p-4 mx-auto"
               />
