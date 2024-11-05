@@ -12,17 +12,17 @@ const Ship = ({ point, scene }: Props) => {
   const [rotate, setRotate] = useState<number>(0);
   const [opacity, setOpacity] = useState<number>(0);
   const [currentShip, setCurrentShip] = useState<string>(
-    "/images/ascent-vehicle.png",
+    "/themes/bigpicture/images/ascent-vehicle.png",
   );
 
   useEffect(() => {
     if (scene === "ascent" || scene === "moon1") {
-      setCurrentShip("/images/ascent-vehicle.png");
+      setCurrentShip("/themes/bigpicture/images/ascent-vehicle.png");
       setXOffset(100);
       setYOffset(5);
       setRotate(0);
     } else if (scene === "decent" || scene === "home" || scene === "moon2") {
-      setCurrentShip("/images/decent-vehicle.png");
+      setCurrentShip("/themes/bigpicture/images/decent-vehicle.png");
       setXOffset(-100);
       setYOffset(-200);
       setRotate(180);
