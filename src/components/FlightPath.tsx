@@ -128,7 +128,7 @@ const FlightPath = ({ className, scrollProgress }: Props) => {
         </svg>
         <div
           className={`absolute top-0 w-[50vw] h-screen bg-cover bg-center transition-opacity duration-1000 opacity-${scene.includes("moon") ? 100 : 0}`}
-          style={{ backgroundImage: "url(/images/moon-surface.webp" }}
+          style={{ backgroundImage: "url(/themes/bigpicture/images/moon-surface.webp" }}
         ></div>
       </div>
     </div>
