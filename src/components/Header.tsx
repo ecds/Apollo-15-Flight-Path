@@ -21,7 +21,7 @@ const Header = () => {
         <a href="https://film.apollo15hub.org/">
           <img
             className="rounded-t-lg"
-            src="images/apollofilmimage.jpg"
+            src="/themes/bigpicture/images/apollofilmimage.jpg"
             alt=""
           />
           <span className="sr-only">
