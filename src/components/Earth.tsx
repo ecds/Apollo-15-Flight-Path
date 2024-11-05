@@ -5,7 +5,7 @@ const Earth = () => {
       transform={`translate(${332} ${115}) scale(${0.3})`}
       width={932}
       height={932}
-      xlinkHref="/images/earth.webp"
+      xlinkHref="/themes/bigpicture/images/earth.webp"
     ></image>
   );
 };
